@@ -1,0 +1,55 @@
+@use "../abstracts/mixins" as m;
+
+.container {
+  @include m.container;
+}
+
+.gridContainer {
+  @include m.gridContainer;
+}
+
+// .responsiveItemsContainer {
+// 	@include m.responsiveItemsContainer;
+// }
+
+.win {
+  font-family: "Twemoji Country Flags", sans-serif;
+}
+
+.mi-icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > svg {
+    color: currentColor;
+    stroke: inherit !important;
+    fill: inherit !important;
+
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.sr-only {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+
+.grecaptcha-badge {
+  z-index: 101;
+}

@@ -1,0 +1,108 @@
+@use "variables" as v;
+
+@mixin display-1($weight: 700) {
+  font-family: v.$neue-haas-grotesk-display;
+  font-size: 118px;
+  font-weight: $weight;
+  line-height: 1em;
+
+  @media (max-width: v.$tablet-down) {
+    font-size: 72px;
+  }
+
+  @media (max-width: v.$mobile-down) {
+    font-size: 46px;
+  }
+}
+
+@mixin heading-1($weight: 700) {
+  font-family: v.$neue-haas-grotesk-display;
+  font-size: 80px;
+  font-weight: $weight;
+  line-height: 1em;
+}
+
+@mixin heading-2($weight: 700) {
+  font-family: v.$neue-haas-grotesk-display;
+  font-size: 64px;
+  font-weight: $weight;
+  line-height: 1.2em;
+
+  @media (max-width: v.$tablet-down) {
+    font-size: 42px;
+  }
+
+  @media (max-width: v.$mobile-down) {
+    font-size: 32px;
+  }
+}
+
+@mixin heading-3($weight: 500) {
+  font-family: v.$neue-haas-grotesk-display;
+  font-size: 48px;
+  font-weight: $weight;
+  line-height: 1.2em;
+
+  @media (max-width: v.$tablet-down) {
+    font-size: 36px;
+  }
+
+  @media (max-width: v.$mobile-down) {
+    font-size: 28px;
+  }
+}
+
+@mixin heading-4($weight: 500) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 32px;
+  font-weight: $weight;
+  line-height: 1.2em;
+}
+
+@mixin heading-5($weight: 400) {
+  // paste here
+}
+
+@mixin heading-6($weight: 400) {
+  // paste here
+}
+
+@mixin body-xl($weight: 400) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 25px;
+  font-weight: $weight;
+  line-height: 1.7em;
+
+  @media (max-width: v.$mobile-down) {
+    font-size: 22px;
+    line-height: 1.2em;
+  }
+}
+
+@mixin body-lg($weight: 400) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 18px;
+  font-weight: $weight;
+  line-height: 1.7em;
+}
+
+@mixin body-md($weight: 400) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 16px;
+  font-weight: $weight;
+  line-height: 1.7em;
+}
+
+@mixin body-sm($weight: 400) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 14px;
+  font-weight: $weight;
+  line-height: 1.7em;
+}
+
+@mixin body-xs($weight: 400) {
+  font-family: v.$neue-haas-grotesk-text;
+  font-size: 10px;
+  font-weight: $weight;
+  line-height: 1.7em;
+}
