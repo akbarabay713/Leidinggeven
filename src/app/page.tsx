@@ -1,7 +1,14 @@
-import HomeTemplate from "../components/templates/Home";
+import Hero from '../features/home/views/Hero';
+import MainLayout from './../components/templates/MainLayout/MainLayout.component';
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <HomeTemplate />
+    <>
+    
+    <Hero />
+    </>
+ 
   );
-}
+};
+
+export default HomePage;

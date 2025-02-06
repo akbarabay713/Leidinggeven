@@ -1,6 +1,6 @@
 import React, { type HTMLAttributes, type ReactNode } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import type { TTypographyComponent } from "./Typography.types";
+import type { TTypographyComponent } from "./types";
 import cn from "classnames";
 import styles from "./Typography.module.scss"
 
@@ -46,6 +46,7 @@ interface ITypographyProps extends HTMLAttributes<HTMLParagraphElement>, Variant
   children?: ReactNode;
   component?: TTypographyComponent;
 }
+
 
 const Typography: React.FC<ITypographyProps> = ({
   children,

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
+import MainLayout from "../components/templates/MainLayout/MainLayout.component";
 import "./globals.css";
-import MainLayout from "../components/templates/MainLayout";
-
 
 export const metadata: Metadata = {
   title: "Create Next App",

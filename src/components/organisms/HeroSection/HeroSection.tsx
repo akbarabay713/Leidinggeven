@@ -1,5 +1,6 @@
 import Container from "../../atoms/Container/Container";
-import Typography from "../../atoms/Typography";
+import Typography from "../../atoms/Typography/Typography";
+
 
 import s from "./HeroSection.module.scss"
 const HeroSection = () => {
