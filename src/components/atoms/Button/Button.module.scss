@@ -1,0 +1,50 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/typo-mixins" as t;
+
+
+.button {
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;    
+}
+
+.sm {
+    @include t.futura-button-small;
+    padding: 8px 14px;
+}
+
+.md {
+    @include t.futura-button-small;
+    padding: 10px 16px;
+}
+
+.lg {
+    @include t.futura-button-large;
+    padding: 10px 16px;
+}
+
+.xl {
+    @include t.futura-button-large;
+    padding: 12px 16px;
+}
+
+.primary {
+    color: v.$base-white;
+    background-color: v.$primary-500;
+    
+    &:hover {
+        background-color: v.$primary-600;
+    }
+}
+.primaryMedium {
+    text-transform: uppercase;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

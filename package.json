@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "i18next": "^24.2.2",
     "next": "15.1.6",
+    "next-i18next": "^15.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.0",
     "sass": "^1.84.0"
   },
   "devDependencies": {

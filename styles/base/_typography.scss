@@ -1,49 +1,114 @@
-@use "../abstracts/typo-mixins";
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/typo-mixins" as t;
 
-.display-1 {
-	@include typo-mixins.display-1;
-}
-
-.h1 {
-	@include typo-mixins.heading-1;
-}
-
-.h2 {
-	@include typo-mixins.heading-2;
-}
-
-.h3 {
-	@include typo-mixins.heading-3;
-}
-
-.h4 {
-	@include typo-mixins.heading-4;
-}
-
-.h5 {
-	@include typo-mixins.heading-5;
-}
-
-.h6 {
-	@include typo-mixins.heading-6;
-}
-
-.body-xl {
-	@include typo-mixins.body-xl;
-}
-
-.body-lg {
-	@include typo-mixins.body-lg;
-}
-
-.body-md {
-	@include typo-mixins.body-md;
-}
-
-.body-sm {
-	@include typo-mixins.body-sm;
-}
-
-.body-xs {
-	@include typo-mixins.body-xs;
-}
+.futura-h-1-medium {
+	@include typo-mixins.futura-h-1-medium;
+	}
+	.futura-h-1-bold {
+	@include typo-mixins.futura-h-1-bold;
+	}
+	.futura-h-2-medium {
+	@include typo-mixins.futura-h-2-medium;
+	}
+	.futura-h-2-bold {
+	@include typo-mixins.futura-h-2-bold;
+	}
+	.futura-h-3-medium {
+	@include typo-mixins.futura-h-3-medium;
+	}
+	.futura-h-3-bold {
+	@include typo-mixins.futura-h-3-bold;
+	}
+	.futura-h-4-medium {
+	@include typo-mixins.futura-h-4-medium;
+	}
+	.futura-h-4-bold {
+	@include typo-mixins.futura-h-4-bold;
+	}
+	.futura-h-5-medium {
+	@include typo-mixins.futura-h-5-medium;
+	}
+	.futura-h-5-bold {
+	@include typo-mixins.futura-h-5-bold;
+	}
+	.futura-h-6-medium {
+	@include typo-mixins.futura-h-6-medium;
+	}
+	.futura-h-6-bold {
+	@include typo-mixins.futura-h-6-bold;
+	}
+	.futura-button-small {
+	@include typo-mixins.futura-button-small;
+	}
+	.futura-button-large {
+	@include typo-mixins.futura-button-large;
+	}
+	.futura-h-7-medium {
+	@include typo-mixins.futura-h-7-medium;
+	}
+	.inter-text-xxl-reguler {
+	@include typo-mixins.inter-text-xxl-reguler;
+	}
+	.inter-text-xxl-medium {
+	@include typo-mixins.inter-text-xxl-medium;
+	}
+	.inter-text-xl-regular {
+	@include typo-mixins.inter-text-xl-regular;
+	}
+	.inter-text-xl-medium {
+	@include typo-mixins.inter-text-xl-medium;
+	}
+	.inter-text-xl-semibold {
+	@include typo-mixins.inter-text-xl-semibold;
+	}
+	.inter-text-xl-bold {
+	@include typo-mixins.inter-text-xl-bold;
+	}
+	.inter-text-lg-regular {
+	@include typo-mixins.inter-text-lg-regular;
+	}
+	.inter-text-lg-medium {
+	@include typo-mixins.inter-text-lg-medium;
+	}
+	.inter-text-lg-semibold {
+	@include typo-mixins.inter-text-lg-semibold;
+	}
+	.inter-text-lg-bold {
+	@include typo-mixins.inter-text-lg-bold;
+	}
+	.inter-text-md-base-regular {
+	@include typo-mixins.inter-text-md-base-regular;
+	}
+	.inter-text-md-base-medium {
+	@include typo-mixins.inter-text-md-base-medium;
+	}
+	.inter-text-md-base-semibold {
+	@include typo-mixins.inter-text-md-base-semibold;
+	}
+	.inter-text-md-base-bold {
+	@include typo-mixins.inter-text-md-base-bold;
+	}
+	.inter-text-sm-regular {
+	@include typo-mixins.inter-text-sm-regular;
+	}
+	.inter-text-sm-medium {
+	@include typo-mixins.inter-text-sm-medium;
+	}
+	.inter-text-sm-semibold {
+	@include typo-mixins.inter-text-sm-semibold;
+	}
+	.inter-text-sm-bold {
+	@include typo-mixins.inter-text-sm-bold;
+	}
+	.inter-text-xs-regular {
+	@include typo-mixins.inter-text-xs-regular;
+	}
+	.inter-text-xs-medium {
+	@include typo-mixins.inter-text-xs-medium;
+	}
+	.inter-text-xs-semibold {
+	@include typo-mixins.inter-text-xs-semibold;
+	}
+	.inter-text-xs-bold {
+	@include typo-mixins.inter-text-xs-bold;
+	}
