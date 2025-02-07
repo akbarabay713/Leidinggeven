@@ -1,15 +1,15 @@
 @use "styles/abstracts/variables" as v;
 @use "styles/abstracts/typo-mixins" as t;
 
-
 .button {
     border-radius: 8px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     transition: all ease-in-out 0.3s;
     cursor: pointer;    
+    width: fit-content;
 }
 
 .sm {
@@ -40,6 +40,29 @@
         background-color: v.$primary-600;
     }
 }
+
+.primaryOutline {
+    color: v.$primary-500;
+    background-color: v.$base-white;
+    border: 1px solid v.$primary-500;
+    
+    &:hover {
+        background-color: v.$primary-50;
+        color: v.$primary-500;
+    }
+}
+
+.outlineColor {
+    color: v.$base-white;
+    background-color: v.$primary-500;
+    border: 1px solid v.$base-white;
+    
+    &:hover {
+        background-color: v.$base-white;
+        color: v.$primary-500;
+    }
+}
+
 .primaryMedium {
     text-transform: uppercase;
 }

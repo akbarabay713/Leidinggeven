@@ -1,7 +1,0 @@
-@use "styles/abstracts/variables" as v;
-@use "styles/abstracts/typo-mixins" as t;
-@use "styles/abstracts/mixins" as m;
-
-.container {
-	@include m.container;
-}
