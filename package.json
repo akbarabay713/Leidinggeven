@@ -17,6 +17,7 @@
     "i18next-http-middleware": "^3.7.1",
     "next": "15.1.6",
     "next-i18next": "^15.4.2",
+    "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/classnames": "^2.3.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

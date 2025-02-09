@@ -1,17 +1,9 @@
-import ChallengesSection from '@/src/components/templates/Home/ChallengesSection/ChallengesSection';
-import HeroTemplate from '@/src/components/templates/Home/HeroTemplate/HeroTemplate';
-import TrainingTemplate from '@/src/components/templates/Home/TrainingTemplate/TrainingTemplate';
-import React from 'react';
+import HeroTemplate from "@/src/components/templates/Home/HeroTemplate/HeroTemplate";
 
+import React from "react";
 
 const Hero: React.FC = () => {
-  return (
-    <>
-      <HeroTemplate />
-      <TrainingTemplate />
-      <ChallengesSection />
-    </>
-  );
+  return <HeroTemplate />;
 };
 
 export default Hero;

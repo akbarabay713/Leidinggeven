@@ -32,6 +32,9 @@ export interface ButtonProps
     VariantProps<typeof button> {
   icon?: React.ReactNode; // Icon component
   iconPosition?: "left" | "right"; // Icon position
+  disabled?: boolean;
+  size: string;
+  variant: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -49,8 +52,12 @@ export const Button: React.FC<ButtonProps> = ({
     disabled={disabled || undefined}
     {...props}
   >
-    {icon && iconPosition === "left" && <span className={styles.icon}>{icon}</span>}
+    {icon && iconPosition === "left" && (
+      <span className={styles.icon}>{icon}</span>
+    )}
     <span className={styles.text}>{children}</span>
-    {icon && iconPosition === "right" && <span className={styles.icon}>{icon}</span>}
+    {icon && iconPosition === "right" && (
+      <span className={styles.icon}>{icon}</span>
+    )}
   </button>
 );
