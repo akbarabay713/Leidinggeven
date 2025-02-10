@@ -5,6 +5,7 @@ import s from "./Header.module.scss";
 import Image from "next/image";
 import Calender from "../../atoms/icons/Calender/Calender";
 import Call from "../../atoms/icons/Call/Call";
+import LanguageSwitcher from "../../molecules/LanguageSwitcher/LanguageSwitcher";
 const Header: React.FC = () => {
   const t = useTranslations();
   return (
@@ -26,9 +27,7 @@ const Header: React.FC = () => {
           <Button variant={"primaryOutline"} size={"xl"} icon={<Calender />}>
             {t("KENNISMAKING PLANNEN")}
           </Button>
-          <Button variant={"primaryOutline"} size={"xl"}>
-            {t("lang")}
-          </Button>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

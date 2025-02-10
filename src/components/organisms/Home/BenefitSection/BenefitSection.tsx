@@ -36,9 +36,7 @@ const BenefitSection: React.FC = () => {
             component="p"
             className={s.benefitSubtitle}
           >
-            {t(
-              "Plan dan een vrijblijvende kennismaking dan maken we samen helder waar je mee geholpen bent"
-            )}
+            {t("benefit.subtitle")}
           </Typography>
           <Button
             size={"xl"}

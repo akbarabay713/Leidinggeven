@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   width: f.rem(275);
+  z-index: 10;
+  position: relative;
   .card {
     height: 235px;
     width: 144px;

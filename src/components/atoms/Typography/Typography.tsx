@@ -46,7 +46,7 @@ interface ITypographyProps
     VariantProps<typeof typographyVariants> {
   children?: ReactNode;
   component?: TTypographyComponent;
-  variant: string;
+  variant?: NonNullable<VariantProps<typeof typographyVariants>["variant"]>;
 }
 
 const Typography: React.FC<ITypographyProps> = ({

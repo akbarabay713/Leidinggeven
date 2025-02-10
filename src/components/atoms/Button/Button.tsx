@@ -30,11 +30,12 @@ const button = cva(styles.button, {
 export interface ButtonProps
   extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
     VariantProps<typeof button> {
-  icon?: React.ReactNode; // Icon component
-  iconPosition?: "left" | "right"; // Icon position
+  icon?: React.ReactNode;
+  iconPosition?: "left" | "right";
   disabled?: boolean;
-  size: string;
-  variant: string;
+  size: "sm" | "md" | "lg" | "xl"; // Restrict size
+  variant?: "primary" | "primaryOutline" | "outlineColor"; // Restrict variant
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button: React.FC<ButtonProps> = ({

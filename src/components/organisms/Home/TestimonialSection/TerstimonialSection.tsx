@@ -8,12 +8,6 @@ import cn from "classnames";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
 import CardTesimonial from "@/src/components/molecules/CardTestimonial/CardTestimonial";
 import CardAuthor from "@/src/components/molecules/CardAuthor/CardAuthor";
 
@@ -21,12 +15,15 @@ const TestimonialSection: React.FC = () => {
   const t = useTranslations("testimonial");
   const settings = {
     dots: true,
-    // infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    // centerMode: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: false,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
   };
   return (
     <section className={s.testimonial}>
@@ -59,32 +56,6 @@ const TestimonialSection: React.FC = () => {
             <div>
               <CardAuthor />
             </div>
-            {/* <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={32}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-            >
-              <SwiperSlide>
-                <CardTesimonial />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardTesimonial />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardTesimonial />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardTesimonial />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardTesimonial />
-              </SwiperSlide>
-            </Swiper> */}
-
             <Slider {...settings} className="w-full">
               <div>
                 <CardTesimonial />
