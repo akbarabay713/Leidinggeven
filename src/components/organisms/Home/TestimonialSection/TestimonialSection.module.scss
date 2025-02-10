@@ -1,0 +1,49 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$base-white;
+  overflow-x: clip;
+  .testimonialContainer {
+    max-width: 1440px;
+    width: 1440px;
+    padding: f.rem(120) f.rem(80) f.rem(120) f.rem(80);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(48) !important;
+
+    @media (max-width: 768px) {
+      padding: f.rem(40) f.rem(16) f.rem(40) f.rem(16);
+    }
+
+    @media (min-width: 1540) {
+      padding: f.rem(140) 0 f.rem(120) 0;
+    }
+  }
+
+  .testimonialTitle {
+    color: v.$primary-500;
+    width: 90%;
+  }
+
+  .testimonialSubtitle {
+    color: v.$gray-500;
+  }
+  .slick-list {
+    overflow: visible !important;
+  }
+
+  .slick-slide {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+}

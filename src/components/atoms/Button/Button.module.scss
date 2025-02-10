@@ -2,72 +2,73 @@
 @use "styles/abstracts/typo-mixins" as t;
 
 .button {
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;    
-    width: fit-content;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
 
 .sm {
-    @include t.futura-button-small;
-    padding: 8px 14px;
+  @include t.futura-button-small;
+  padding: 8px 14px;
 }
 
 .md {
-    @include t.futura-button-small;
-    padding: 10px 16px;
+  @include t.futura-button-small;
+  padding: 10px 16px;
 }
 
 .lg {
-    @include t.futura-button-large;
-    padding: 10px 16px;
+  @include t.futura-button-large;
+  padding: 10px 16px;
 }
 
 .xl {
-    @include t.futura-button-large;
-    padding: 12px 16px;
+  @include t.futura-button-large;
+  padding: 12px 16px;
 }
 
 .primary {
-    color: v.$base-white;
-    background-color: v.$primary-500;
-    
-    &:hover {
-        background-color: v.$primary-600;
-    }
+  color: v.$base-white;
+  background-color: v.$primary-500;
+
+  &:hover {
+    background-color: v.$primary-600;
+  }
 }
 
 .primaryOutline {
+  color: v.$primary-500;
+  background-color: v.$base-white;
+  border: 1px solid v.$primary-500;
+
+  &:hover {
+    background-color: v.$primary-50;
     color: v.$primary-500;
-    background-color: v.$base-white;
-    border: 1px solid v.$primary-500;
-    
-    &:hover {
-        background-color: v.$primary-50;
-        color: v.$primary-500;
-    }
+  }
 }
 
 .outlineColor {
-    color: v.$base-white;
-    background-color: v.$primary-500;
-    border: 1px solid v.$base-white;
-    
-    &:hover {
-        background-color: v.$base-white;
-        color: v.$primary-500;
-    }
+  color: v.$base-white;
+  background-color: v.$primary-500;
+  border: 1px solid v.$base-white;
+
+  &:hover {
+    background-color: v.$base-white;
+    color: v.$primary-500;
+  }
 }
 
 .primaryMedium {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }

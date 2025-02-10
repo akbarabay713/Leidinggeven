@@ -3,7 +3,6 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import MainLayout from "../../components/templates/MainLayout/MainLayout.component";
 import "../globals.css";
-import { headers } from "next/headers";
 import { getLocale } from "@/src/lib/i18n/config";
 
 export const metadata: Metadata = {
@@ -19,9 +18,10 @@ export default async function RootLayout({
 }>) {
   const messages = await getMessages();
   const locale = await getLocale();
+
   return (
     <html lang={locale}>
-      <body className={`antialiased`}>
+      <body className={`antialiased relative`}>
         <NextIntlClientProvider messages={messages}>
           <MainLayout>{children}</MainLayout>
         </NextIntlClientProvider>

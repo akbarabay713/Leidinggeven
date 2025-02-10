@@ -1,0 +1,47 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.card {
+  // width: f.rem(800);
+  // max-width: f.rem(800);
+  padding-right: f.rem(48);
+  border-right: 1px solid v.$secondary-100;
+  margin-right: 32px;
+  .name {
+    color: v.$secondary-500;
+    font-family: Futura-Medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 4px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: f.rem(10);
+    margin-bottom: f.rem(23);
+  }
+
+  .companyName {
+    color: v.$secondary-500;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .divider {
+    width: 8px;
+    height: 8px;
+    background-color: v.$secondary-50;
+    border-radius: 100%;
+  }
+
+  h3 {
+    color: v.$secondary-900;
+  }
+}

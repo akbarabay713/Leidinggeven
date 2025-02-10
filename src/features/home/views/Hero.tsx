@@ -1,4 +1,4 @@
-import HeroTemplate from "@/src/components/templates/Home/HeroTemplate/HeroTemplate";
+import HeroTemplate from "@/src/components/organisms/Home/HeroTemplate/HeroTemplate";
 
 import React from "react";
 

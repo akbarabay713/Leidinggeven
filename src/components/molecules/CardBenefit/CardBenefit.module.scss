@@ -1,0 +1,27 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.wrapper {
+  position: relative;
+  padding: f.rem(24) f.rem(24) f.rem(24) f.rem(48);
+  background-color: #1b2911;
+  border-radius: 1.5px;
+  border: 1px solid #141f0d;
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(10);
+
+  .icon {
+    width: f.rem(40);
+    height: f.rem(40);
+    border-radius: f.rem(8);
+    background-color: v.$primary-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: -21px;
+  }
+}

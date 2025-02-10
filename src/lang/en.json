@@ -1,13 +1,49 @@
 {
   "hero": {
-    "title": "Leidinggeven <br></br><span>met en zonder Ego,</span>",
+    "title": "Leading <br></br><span>with and without Ego,</span>",
     "subtitle": "A practical training for executives who dare to look at themselves",
     "KENNISMAKING PLANNEN": "SCHEDULE INTRODUCTIONS"
   },
+  "training": {
+    "title": "TRAINING <br></br><span>BASED ON A POWERFUL 8-STEP MODEL</span>",
+    "subtitle": "We help leaders of all levels put the principles from Leading With and Without Ego into practice. We teach you to lead on the golden mean of control and letting go. You'll learn to shift between directive and servant leadership on a deep level, enabling you to do what it takes to lead a team to sustainable performance. Are you ready to take the next step in your leadership and challenge yourself?"
+  },
+  "challenge": {
+    "title": "DO YOU RECOGNIZE THESE CHALLENGES?<br></br>THEN OUR TRAINING WOULD FIT",
+    "Heb je het gevoel dat je sterk moet zijn voor je team?": "Do you feel you need to be strong for your team?",
+    "Pas jij je gedrag aan uit angst voor afwijzing?": "Do you adjust your behavior for fear of rejection?",
+    "Doe je wat je baas van je verwacht en luister je niet naar je eigen inzichten?": "Are you doing what your boss expects of you and not listening to your own insights?",
+    "Vertrouw je in moeilijke situaties op rationeel denken?": "Do you rely on rational thinking in difficult situations?",
+    "Voel je weerstand of sabotage binnen je team?": "Do you sense resistance or sabotage within your team?",
+    "Zijn jouw afdelingen meer bezig met hun eigen resultaten dan met het grotere geheel?": "Are your departments more concerned with their own results than with the bigger picture?",
+    "Dan passen onze lezingen en trainingen bij jou!": "Then our lectures and training courses are a good fit for you!",
+    "INSCHRIJVEN": "SUBSCRIBE"
+  },
+  "testimonials": {
+    "title": "EXPERIENCES OF OTHERS",
+    "subtitle": "Curious about the experiences of other executives after attending Stefanie van Boekel's Leadership with and without Ego training?",
+    "TERUGBELVERZOEK?": "CALLBACK REQUEST?"
+  },
+  "benefit": {
+    "title": "BEN JIJ, BINNEN JOUW ORGANISATIE, <br></br>OP ZOEK NAAR LEIDINGGEVENDEN DIE:",
+    "FLUITEND NAAR HUN WERK GAAN": "FLUITEND NAAR HUN WERK GAAN",
+    "Leidinggevenden die elke dag enthousiast en gemotiveerd zijn": "Leidinggevenden die elke dag enthousiast en gemotiveerd zijn.",
+    "CREATIEF EN PRODUCTIEF ZIJN": "CREATIEF EN PRODUCTIEF ZIJN",
+    "ELKAAR VERSTERKEN": "ELKAAR VERSTERKEN",
+    "Leidinggevenden die een samenwerkende omgeving bevorderen waar teamleden elkaar ondersteunen en versterken": "Leidinggevenden die een samenwerkende omgeving bevorderen waar teamleden elkaar ondersteunen en versterken.",
+    "PRESTATIES GAAN DOORBREKEN": "Leidinggevenden die grenzen verleggen en voortdurend uitstekende resultaten behalen.",
+    "Leidinggevenden die grenzen verleggen en voortdurend uitstekende resultaten behalen": "Leidinggevenden die grenzen verleggen en voortdurend uitstekende resultaten behalen.",
+    "Plan dan een vrijblijvende kennismaking dan maken we samen helder waar je mee geholpen bent": "Plan dan een vrijblijvende kennismaking dan maken we samen helder waar je mee geholpen bent.",
+    "KENNISMAKING PLANNEN": "KENNISMAKING PLANNEN"
+  },
+  "organisation": {
+    "title": "UNIEKE LEIDERSCHAPSONTWIKKELING OP MAAT VOOR JOUW ORGANISATIE",
+    "subtitle": "We kunnen jou als leidinggevende trainen, maar vaak is het effectiever, waardevoller en leuker om een groter deel van je organisatie mee te nemen. Zo spreek je dezelfde taal en begrijp je beter van elkaar wat je doet. Hoewel de 8 stappen uit Leidinggeven met en zonder Ego de basis vormen, is wat jouw organisatie echt verder gaat brengen uniek. Neem gerust contact op, dan kijken we samen wat jij wilt bereiken, zowel als persoon als vanuit je functie, en hoe de organisatie daar het meest mee geholpen is."
+  },
+  "leading": {
+    "title": "BOEK DE TRAINING<br></br><span>LEIDINGGEVEN MET EN ZONDER EGO<span>",
+    "subtitle": "Ben jij klaar met gedoe, ontevreden personeel en wil je graag fluitend naar je werk? Wil jij teams boven zichzelf uit laten stijgen? Dat ze hun werk ten diepste zinvol vinden, hun kwaliteiten inzetten en voldoening ervaren? Wil je bezig zijn met het grotere plaatje in plaats van brandjes blussen? Wordt een geloofwaardig leider die impact maakt: zorg voor tevreden klanten, een lekkere samenwerking en veel werkplezier."
+  },
   "KENNISMAKING PLANNEN": "SCHEDULE INTRODUCTIONS",
-
-  "TRAINING": "TRAINING",
-  "GEBASEERD OP EEN KRACHTIGE 8-STAPPENMODEL": "BASED ON A POWERFUL 8-STEP MODEL",
-  "Wij helpen leiders van alle niveaus om de principes uit Leidinggeven met en Zonder Ego in de praktijk te brengen We leren je leidinggeven op de gulde middenweg van controle en loslaten Je leert op een diep niveau wisselen tussen directief en dienstbaar leidinggeven, waardoor je dat gaat doen wat nodig is om een team naar duurzame prestaties te leiden Ben jij klaar om de volgende stap te zetten in je leiderschap en jezelf uit te dagen?": "We help leaders of all levels put the principles from Leading With and Without Ego into practice. We teach you to lead on the golden mean of control and letting go. You'll learn to shift between directive and servant leadership on a deep level, enabling you to do what it takes to lead a team to sustainable performance. Are you ready to take the next step in your leadership and challenge yourself?",
-  "HERKEN JE DEZE UITDAGINGEN? DAN PAST ONZE TRAINING BIJ ZOU": "DO YOU RECOGNIZE THESE CHALLENGES? THEN OUR TRAINING WOULD FIT"
+  "lang": "De"
 }

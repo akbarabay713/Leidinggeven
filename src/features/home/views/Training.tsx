@@ -1,4 +1,4 @@
-import TrainingTemplate from "@/src/components/templates/Home/TrainingTemplate/TrainingTemplate";
+import TrainingTemplate from "@/src/components/organisms/Home/TrainingTemplate/TrainingTemplate";
 import React from "react";
 
 const Training: React.FC = () => {

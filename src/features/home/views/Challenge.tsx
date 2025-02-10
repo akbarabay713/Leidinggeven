@@ -1,4 +1,4 @@
-import ChallengesSection from "@/src/components/templates/Home/ChallengesSection/ChallengesSection";
+import ChallengesSection from "@/src/components/organisms/Home/ChallengesSection/ChallengesSection";
 import React from "react";
 
 const Challenge: React.FC = () => {
