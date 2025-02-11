@@ -42,13 +42,14 @@ const HeroTemplate: React.FC = () => {
           </div>
         </div>
 
-        <div className={cn(s.heroImg)}>
+        <div className={cn(s.heroImg, "border border-blue-500")}>
           <Image
             src="/images/hero.png"
             alt="hero"
-            width={1200}
-            height={1200}
+            width={800}
+            height={800}
             priority
+            quality={90}
           />
         </div>
       </div>

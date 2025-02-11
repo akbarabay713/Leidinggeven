@@ -9,6 +9,9 @@
   background-color: v.$primary-500;
   overflow: clip;
   height: 535px;
+  @media (max-width: 768px) {
+    height: auto;
+  }
   &Container {
     max-width: 1440px;
     width: 1440px;
@@ -20,6 +23,7 @@
 
     @media (max-width: 768px) {
       padding: f.rem(40) f.rem(16) f.rem(120) f.rem(16);
+      flex-direction: column;
     }
   }
 
@@ -29,6 +33,10 @@
 
     span {
       color: v.$base-white;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
     }
   }
   &Subtitle {

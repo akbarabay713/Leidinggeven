@@ -11,19 +11,34 @@ const Header: React.FC = () => {
   return (
     <header className={s.header}>
       <div className={s.headerContainer}>
-        <Button variant={"outlineColor"} size={"xl"} icon={<Call />}>
+        <Button
+          variant={"outlineColor"}
+          size={"xl"}
+          icon={<Call />}
+          className="hidden md:flex"
+        >
           CONTACT
         </Button>
 
-        <Image
-          src="/images/logo.png"
-          alt="hero"
-          width={136}
-          height={100}
-          priority
+        <div className="w-16 md:w-[136px] md:h-[100px]">
+          <Image
+            src="/images/logo.png"
+            alt="hero"
+            width={136}
+            height={100}
+            priority
+            className="md:ml-10 ml-0"
+          />
+        </div>
+
+        <Button
+          variant={"primaryOutline"}
+          size={"xlIcon"}
+          icon={<Calender />}
+          className="flex md:hidden"
         />
 
-        <div className="flex gap-2">
+        <div className="hidden md:flex gap-2 ">
           <Button variant={"primaryOutline"} size={"xl"} icon={<Calender />}>
             {t("KENNISMAKING PLANNEN")}
           </Button>

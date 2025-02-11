@@ -11,7 +11,7 @@ const AreYouReadySection: React.FC = () => {
   return (
     <section className={s.areYouReady}>
       <div className={s.areYouReadyContainer}>
-        <div className="grid grid-cols-2 gap-8 place-items-start justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-start justify-items-center">
           <Image
             src="/images/areyouready.png"
             alt="hero"
@@ -42,7 +42,7 @@ const AreYouReadySection: React.FC = () => {
               })}
             </Typography>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap md:flex-nowrap">
               <Button variant={"primary"} size={"xl"}>
                 {t("TERUGBELVERZOEK")}
               </Button>

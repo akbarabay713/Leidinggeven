@@ -26,7 +26,7 @@ const AuthorSection: React.FC = () => {
           })}
         </Typography>
 
-        <div className="flex gap-[77px] items-end mb-16">
+        <div className="flex gap-[77px] items-end justify-center mb-16 flex-wrap md:flex-nowrap">
           <div className="w-[269px] min-w-[269px] flex-shrink-0">
             <Image
               src="/images/author2.png"

@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
   return (
     <section className={s.about}>
       <div className={s.aboutContainer}>
-        <div className="flex items-center justify-between mb-16">
+        <div className="flex items-center justify-between mb-16 flex-wrap md:flex-nowrap">
           <Typography
             variant="futuraH3Bold"
             component="h2"
@@ -32,24 +32,36 @@ const AboutSection: React.FC = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p>{t("Geschreven door:")}</p>
             <div className="flex gap-6 flex-col pr-12 border-r border-[#3A5A28]">
               <div className="flex items-center justify-between">
-                <Typography variant="futuraH4Bold" component="h4">
+                <Typography
+                  variant="futuraH4Bold"
+                  component="h4"
+                  className={s.aboutNames}
+                >
                   PAUL VAN SCHAIK
                 </Typography>
                 <Linkedin color="white" size={32} />
               </div>
               <div className="flex items-center justify-between">
-                <Typography variant="futuraH4Bold" component="h4">
+                <Typography
+                  variant="futuraH4Bold"
+                  component="h4"
+                  className={s.aboutNames}
+                >
                   ALFRED SCHMITS
                 </Typography>
                 <Linkedin color="white" size={32} />
               </div>
               <div className="flex items-center justify-between">
-                <Typography variant="futuraH4Bold" component="h4">
+                <Typography
+                  variant="futuraH4Bold"
+                  component="h4"
+                  className={s.aboutNames}
+                >
                   DENNIS STOUT
                 </Typography>
                 <Linkedin color="white" size={32} />

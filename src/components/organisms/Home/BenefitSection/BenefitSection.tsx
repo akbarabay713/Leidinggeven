@@ -25,7 +25,7 @@ const BenefitSection: React.FC = () => {
         </Typography>
 
         <div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 pl-4 md:pl-0">
             {BENEFIT.map((b, i) => (
               <CardBenefit title={b.title} subtitle={b.subtitle} key={i} />
             ))}

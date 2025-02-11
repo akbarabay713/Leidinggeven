@@ -12,7 +12,7 @@ const FormContact: React.FC = () => {
     <form action="">
       <div className={s.form}>
         <div className={s.formWrapper}>
-          <div className="flex gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             <Input
               label="Email"
               placeholder="Enter your email"
@@ -28,7 +28,7 @@ const FormContact: React.FC = () => {
             />
           </div>
 
-          <div className="flex gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             <Input
               label="Email"
               placeholder="Enter your email"

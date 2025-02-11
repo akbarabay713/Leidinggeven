@@ -22,8 +22,19 @@
   &Title {
     color: v.$base-white;
     margin-top: f.rem(78);
+    @media (max-width: 768px) {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: f.rem(20);
+    }
   }
   &Subtitle {
     color: v.$gray-500;
+  }
+
+  &Names {
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 }

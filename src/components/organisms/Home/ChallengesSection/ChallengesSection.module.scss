@@ -24,9 +24,18 @@
 
   .challengesTitle {
     color: v.$base-white;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   .challengesSubtitle {
     color: v.$gray-500;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 20px;
   }
 }

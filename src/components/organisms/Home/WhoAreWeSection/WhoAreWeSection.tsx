@@ -11,7 +11,7 @@ const WhoAreWeSection: React.FC = () => {
   return (
     <section className={s.whoAreWe}>
       <div className={s.whoAreWeContainer}>
-        <div className="grid grid-cols-2 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 mb-8">
           <Typography
             variant="futuraH3Bold"
             component="h2"
@@ -32,12 +32,12 @@ const WhoAreWeSection: React.FC = () => {
           </Typography>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <CardWhoAreWe text={WHOAREWE[0].text} styles={WHOAREWE[0].styles} />
           <CardWhoAreWe text={WHOAREWE[1].text} styles={WHOAREWE[1].styles} />
           <CardWhoAreWe text={WHOAREWE[2].text} styles={WHOAREWE[2].styles} />
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <CardWhoAreWe text={WHOAREWE[3].text} styles={WHOAREWE[3].styles} />
           <CardWhoAreWe text={WHOAREWE[4].text} styles={WHOAREWE[4].styles} />
         </div>

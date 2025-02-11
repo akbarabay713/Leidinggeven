@@ -21,7 +21,7 @@ const OrganisationSection: React.FC = () => {
           })}
         </Typography>
 
-        <div className="grid grid-cols-2 gap-8 place-items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center justify-items-center">
           <Typography
             variant="interTextXxlMedium"
             component="h3"

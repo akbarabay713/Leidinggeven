@@ -22,6 +22,9 @@
   &Title {
     color: v.$secondary-500;
     margin-bottom: f.rem(7);
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
 
     span {
       color: v.$primary-500;

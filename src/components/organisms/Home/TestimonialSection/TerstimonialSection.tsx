@@ -28,7 +28,7 @@ const TestimonialSection: React.FC = () => {
   return (
     <section className={s.testimonial}>
       <div className={cn(s.testimonialContainer)}>
-        <div className="grid grid-cols-2 gap-2 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-12">
           <Typography
             variant="futuraH3Bold"
             component="h2"
@@ -52,7 +52,7 @@ const TestimonialSection: React.FC = () => {
           </div>
         </div>
         <div>
-          <div className="flex gap-10 w-full">
+          <div className="flex gap-10 w-full flex-wrap md:flex-nowrap">
             <div>
               <CardAuthor />
             </div>

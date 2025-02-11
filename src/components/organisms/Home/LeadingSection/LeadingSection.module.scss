@@ -25,6 +25,10 @@
     span {
       color: v.$primary-500;
     }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
   &Subtitle {
     color: v.$gray-500;

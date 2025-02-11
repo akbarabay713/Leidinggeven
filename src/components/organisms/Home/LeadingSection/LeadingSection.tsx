@@ -21,7 +21,7 @@ const LeadingSection: React.FC = () => {
           })}
         </Typography>
 
-        <div className="grid grid-cols-2 gap-8 place-items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center justify-items-center">
           <Image
             src="/images/leading.png"
             alt="hero"

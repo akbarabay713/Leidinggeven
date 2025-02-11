@@ -26,6 +26,10 @@
     span {
       color: v.$base-white;
     }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &Subtitle {

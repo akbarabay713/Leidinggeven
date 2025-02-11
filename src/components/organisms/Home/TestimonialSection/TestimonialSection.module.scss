@@ -30,16 +30,4 @@
   .testimonialSubtitle {
     color: v.$gray-500;
   }
-  .slick-list {
-    overflow: visible !important;
-  }
-
-  .slick-slide {
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-  }
-
-  .slick-current {
-    opacity: 1;
-  }
 }
