@@ -5,7 +5,7 @@ import s from "./BenefitSection.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
 
 import CardBenefit from "@/src/components/molecules/CardBenefit/CardBenefit";
-import { benefit } from "@/src/constants/benefit";
+import { BENEFIT } from "@/src/constants/benefit";
 import Calender from "@/src/components/atoms/icons/Calender/Calender";
 const BenefitSection: React.FC = () => {
   const t = useTranslations();
@@ -26,7 +26,7 @@ const BenefitSection: React.FC = () => {
 
         <div>
           <div className="flex flex-col gap-6">
-            {benefit.map((b, i) => (
+            {BENEFIT.map((b, i) => (
               <CardBenefit title={b.title} subtitle={b.subtitle} key={i} />
             ))}
           </div>

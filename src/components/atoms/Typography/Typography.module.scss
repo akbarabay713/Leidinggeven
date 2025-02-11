@@ -1,241 +1,256 @@
 @font-face {
-  font-family: 'Futura';
-  src: url('../../../assets/fonts/Futura-Bold.ttf');
+  font-family: "Futura";
+  src: url("../../../assets/fonts/Futura-Bold.ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura-bold';
-  src: url('../../../assets/fonts/FuturaLT-Bold.ttf');
+  font-family: "Futura-bold";
+  src: url("../../../assets/fonts/FuturaLT-Bold.ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura-light';
-  src: url('../../../assets/fonts/Futura-Book-font.ttf');
+  font-family: "Futura-light";
+  src: url("../../../assets/fonts/Futura-Book-font.ttf");
   font-style: normal;
   font-display: swap;
 }
 .futuraH1Medium {
-    font-size: 72px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.25em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH1Bold {
-    font-size: 72px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.25em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH2Medium {
-    font-size: 60px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.20em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH2Bold {
-    font-size: 60px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.20em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH3Medium {
-    font-size: 48px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.25em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH3Bold {
-    font-size: 48px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.25em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH4Medium {
-    font-size: 36px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.22em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH4Bold {
-    font-size: 36px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.22em;
-    letter-spacing: -0.02em;
-  }
-  
-  .futuraH5Medium {
-    font-size: 30px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.27em;
-  }
-  
-  .futuraH5Bold {
-    font-size: 30px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.27em;
-  }
-  
-  .futuraH6Medium {
-    font-size: 24px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.33em;
-  }
-  
-  .futuraH6Bold {
-    font-size: 24px;
-    font-family: "Futura", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.33em;
-  }
-  
-  .futuraButtonSmall {
-    font-size: 14px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .futuraButtonLarge {
-    font-size: 16px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .futuraH7Medium {
-    font-size: 20px;
-    font-family: "Futura", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .interTextXxlRegular {
-    font-size: 24px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextXxlMedium {
-    font-size: 24px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextXlRegular {
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextXlMedium {
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextXlSemibold {
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextXlBold {
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextLgRegular {
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.56em;
-  }
-  
-  .interTextLgMedium {
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.56em;
-  }
-  
-  .interTextLgSemibold {
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 1.56em;
-  }
-  
-  .interTextLgBold {
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.56em;
-  }
-  
-  .interTextMdBaseRegular {
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
-  .interTextMdBaseMedium {
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.50em;
-  }
-  
+  font-size: 72px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH1Bold {
+  font-size: 72px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH2Medium {
+  font-size: 60px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH2Bold {
+  font-size: 60px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH3Medium {
+  font-size: 48px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH3Bold {
+  font-size: 48px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH4Medium {
+  font-size: 36px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.22em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH4Bold {
+  font-size: 36px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.22em;
+  letter-spacing: -0.02em;
+}
+
+.futuraH5Medium {
+  font-size: 30px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.27em;
+}
+
+.futuraH5Bold {
+  font-size: 30px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.27em;
+}
+
+.futuraH6Medium {
+  font-size: 24px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.33em;
+}
+
+.futuraH6Bold {
+  font-size: 24px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.33em;
+}
+
+.futuraButtonSmall {
+  font-size: 14px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.futuraButtonLarge {
+  font-size: 16px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.futuraH7Medium {
+  font-size: 20px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.interTextXxlRegular {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextXxlMedium {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextXlRegular {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextXlMedium {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextXlSemibold {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextXlBold {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextLgRegular {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.interTextLgMedium {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.56em;
+}
+
+.interTextLgSemibold {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.56em;
+}
+
+.interTextLgBold {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.56em;
+}
+
+.interTextMdBaseRegular {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextMdBaseMedium {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+.interTextSmRegular {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.interTextXsSemibold {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5em;
+}

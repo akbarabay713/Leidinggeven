@@ -1,0 +1,13 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.wrapper {
+  position: relative;
+  padding: f.rem(16);
+  border-radius: f.rem(24);
+  border: f.rem(16) solid #303f24;
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(10);
+}

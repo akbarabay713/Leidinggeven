@@ -1,0 +1,36 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.whyUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$base-white;
+  overflow-x: clip;
+  &Container {
+    max-width: 1440px;
+    width: 1440px;
+    padding: f.rem(64) f.rem(80) f.rem(120) f.rem(80);
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: f.rem(40) f.rem(16) f.rem(120) f.rem(16);
+    }
+  }
+
+  &Title {
+    color: v.$primary-600;
+    margin-bottom: f.rem(16);
+    text-align: center;
+
+    span {
+      color: v.$secondary-500;
+    }
+  }
+  &Subtitle {
+    color: v.$gray-500;
+    margin-bottom: f.rem(40);
+    text-align: center;
+  }
+}

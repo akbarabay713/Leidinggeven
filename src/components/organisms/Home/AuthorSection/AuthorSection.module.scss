@@ -1,0 +1,38 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$base-white;
+  overflow-x: clip;
+  &Container {
+    max-width: 1440px;
+    width: 1440px;
+    padding: f.rem(120) f.rem(80) 0 f.rem(80);
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: f.rem(40) f.rem(16) 0 f.rem(16);
+    }
+  }
+
+  &Title {
+    color: v.$secondary-500;
+    margin-bottom: f.rem(7);
+
+    span {
+      color: v.$primary-500;
+    }
+  }
+  &Subtitle {
+    color: v.$gray-500;
+    margin-bottom: f.rem(64);
+  }
+
+  ol {
+    list-style-type: decimal !important;
+  }
+}

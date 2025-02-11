@@ -1,0 +1,21 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/functions" as f;
+@use "styles/abstracts/mixins" as m;
+
+.form {
+  background: v.$base-white;
+  border-radius: f.rem(8);
+  overflow: hidden;
+
+  &Wrapper {
+    padding: f.rem(24);
+    border-bottom: f.rem(1) solid v.$gray-200;
+  }
+  &Footer {
+    padding: f.rem(16) f.rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: v.$gray-25;
+  }
+}

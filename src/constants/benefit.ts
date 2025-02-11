@@ -1,4 +1,4 @@
-export const benefit = [
+export const BENEFIT = [
   {
     title: "FLUITEND NAAR HUN WERK GAAN",
     subtitle: "Leidinggevenden die elke dag enthousiast en gemotiveerd zijn",

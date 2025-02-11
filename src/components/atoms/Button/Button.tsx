@@ -8,12 +8,17 @@ const button = cva(styles.button, {
       primary: styles.primary,
       primaryOutline: styles.primaryOutline,
       outlineColor: styles.outlineColor,
+      outlineGray: styles.outlineGray,
     },
     size: {
       sm: styles.sm,
       md: styles.md,
       lg: styles.lg,
       xl: styles.xl,
+      smIcon: styles.smIcon,
+      mdIcon: styles.mdIcon,
+      lgIcon: styles.lgIcon,
+      xlIcon: styles.xlIcon,
     },
     disabled: {
       false: styles.enabled,
@@ -33,8 +38,8 @@ export interface ButtonProps
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   disabled?: boolean;
-  size: "sm" | "md" | "lg" | "xl"; // Restrict size
-  variant?: "primary" | "primaryOutline" | "outlineColor"; // Restrict variant
+  size: "sm" | "md" | "lg" | "xl" | "smIcon" | "mdIcon" | "lgIcon" | "xlIcon";
+  variant?: "primary" | "primaryOutline" | "outlineColor" | "outlineGray";
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
@@ -56,7 +61,8 @@ export const Button: React.FC<ButtonProps> = ({
     {icon && iconPosition === "left" && (
       <span className={styles.icon}>{icon}</span>
     )}
-    <span className={styles.text}>{children}</span>
+    {children && <span className={styles.text}>{children}</span>}
+
     {icon && iconPosition === "right" && (
       <span className={styles.icon}>{icon}</span>
     )}
