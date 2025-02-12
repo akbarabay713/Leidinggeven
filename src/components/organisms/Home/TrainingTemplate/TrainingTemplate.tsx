@@ -4,9 +4,10 @@ import { useTranslations } from "next-intl";
 import s from "./TrainingTemplate.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
 import Call from "@/src/components/atoms/icons/Call/Call";
+import Image from "next/image";
 
 const TrainingTemplate: React.FC = () => {
-  const t = useTranslations('training');
+  const t = useTranslations("training");
 
   return (
     <section className={s.training}>
@@ -17,9 +18,9 @@ const TrainingTemplate: React.FC = () => {
           className={s.trainingTitle}
         >
           {t.rich("title", {
-              span: (chunks) => <span>{chunks}</span>,
-              br: () => <br />,
-            })} 
+            span: (chunks) => <span>{chunks}</span>,
+            br: () => <br />,
+          })}
         </Typography>
 
         <Typography
@@ -27,9 +28,7 @@ const TrainingTemplate: React.FC = () => {
           component="h3"
           className={s.trainingSubtitle}
         >
-          {t(
-            "subtitle"
-          )}
+          {t("subtitle")}
         </Typography>
 
         <Button
@@ -40,6 +39,16 @@ const TrainingTemplate: React.FC = () => {
         >
           CONTACT
         </Button>
+      </div>
+      <div className="w-[2116px] h-[329px] absolute -bottom-44 z-[1]">
+        <Image
+          src="/images/leiding.png"
+          alt="hero"
+          fill
+          priority
+          quality={100}
+          className="w-full"
+        />
       </div>
     </section>
   );

@@ -1,35 +1,35 @@
 import { forwardRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import cn from "classnames";
+import s from "./InputField.module.scss";
 
-const inputVariants = cva(
-  "w-full rounded-md border px-3 py-2 text-sm outline-none transition-all",
-  {
-    variants: {
-      size: {
-        sm: "text-sm py-1 px-2",
-        md: "text-base py-2 px-3",
-        lg: "text-lg py-3 px-4",
-      },
-      variant: {
-        default: "border-gray-300 focus:ring-2 focus:ring-blue-500",
-        error: "border-red-500 focus:ring-2 focus:ring-red-500",
-        disabled: "bg-gray-100 border-gray-300 cursor-not-allowed",
-      },
+const inputVariants = cva(s.input, {
+  variants: {
+    size: {
+      sm: s.sm,
+      md: s.md,
+      lg: s.lg,
     },
-    defaultVariants: {
-      size: "md",
-      variant: "default",
+    variant: {
+      default: s.default,
+      error: s.error,
+      disabled: s.disabled,
     },
-  }
-);
+  },
+  defaultVariants: {
+    size: "md",
+    variant: "default",
+  },
+});
 
 interface InputFieldProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
-    VariantProps<typeof inputVariants> {}
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size">,
+    VariantProps<typeof inputVariants> {
+  size?: "sm" | "md" | "lg"; // Override size
+}
 
 const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
-  ({ className, size, variant, ...props }, ref) => {
+  ({ className, size = "md", variant, ...props }, ref) => {
     return (
       <input
         ref={ref}

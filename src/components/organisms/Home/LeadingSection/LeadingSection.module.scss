@@ -1,6 +1,7 @@
 @use "styles/abstracts/variables" as v;
 @use "styles/abstracts/functions" as f;
 @use "styles/abstracts/mixins" as m;
+@use "styles/abstracts/typo-mixins" as t;
 
 .leading {
   display: flex;
@@ -22,6 +23,7 @@
   &Title {
     color: v.$secondary-500;
     margin-bottom: f.rem(48);
+    @include t.futura-h-3-light;
     span {
       color: v.$primary-500;
     }

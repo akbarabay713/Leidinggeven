@@ -3,11 +3,13 @@ import { Label } from "../../atoms/Label/Label";
 import { InputField } from "../../atoms/InputField/InputField";
 import { ErrorMessage } from "../../atoms/ErrorMessage/ErrorMessage";
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> {
   label?: string;
   errorMessage?: string;
   size?: "sm" | "md" | "lg";
   isRequired?: boolean;
+  variant?: "default" | "error" | "disabled";
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(

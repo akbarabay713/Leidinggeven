@@ -1,0 +1,59 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/typo-mixins" as t;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+
+  color: v.$gray-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  font-family: "Inter", sans-serif;
+  // Variants
+  &.default {
+    border-color: v.$gray-200;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px v.$primary-500;
+      color: v.$gray-900;
+    }
+  }
+
+  &.error {
+    border-color: v.$error-danger-500;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px v.$error-danger-500;
+    }
+  }
+
+  &.disabled {
+    background-color: v.$gray-100;
+    border-color: v.$gray-200;
+    cursor: not-allowed;
+  }
+
+  // Sizes
+  &.sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  &.md {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  &.lg {
+    font-size: 1.125rem;
+    padding: 0.75rem 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+@use "styles/abstracts/variables" as v;
+@use "styles/abstracts/typo-mixins" as t;
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 2px solid v.$gray-200;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+
+  // display: none;
+
+  &:checked {
+    background-color: v.$primary-500 !important;
+    border-color: v.$primary-500;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px v.$primary-500;
+  }
+}
+
+.default {
+  border-color: v.$gray-200;
+}
+
+.error {
+  border-color: v.$error-danger-500;
+  &:checked {
+    background-color: v.$error-danger-500;
+  }
+}
+
+.disabled {
+  border-color: v.$gray-400;
+  cursor: not-allowed;
+  background-color: v.$gray-200;
+}

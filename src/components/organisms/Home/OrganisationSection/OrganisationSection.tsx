@@ -41,6 +41,16 @@ const OrganisationSection: React.FC = () => {
           />
         </div>
       </div>
+      <div className="w-[2116px] h-[329px] absolute bottom-0 z-[1]">
+        <Image
+          src="/images/leiding.png"
+          alt="hero"
+          fill
+          priority
+          quality={100}
+          className="w-full"
+        />
+      </div>
     </section>
   );
 };

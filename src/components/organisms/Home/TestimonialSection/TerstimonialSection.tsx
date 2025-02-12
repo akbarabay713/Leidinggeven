@@ -57,12 +57,9 @@ const TestimonialSection: React.FC = () => {
               <CardAuthor />
             </div>
             <Slider {...settings} className="w-full">
-              <div>
-                <CardTesimonial />
-              </div>
-              <div>
-                <CardTesimonial />
-              </div>
+              <CardTesimonial />
+              <CardTesimonial />
+              <CardTesimonial />
             </Slider>
           </div>
         </div>

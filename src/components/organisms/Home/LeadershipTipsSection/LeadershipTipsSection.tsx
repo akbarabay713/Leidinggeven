@@ -11,7 +11,7 @@ const LeadershipTipsSection: React.FC = () => {
   return (
     <section className={s.leadershipTips}>
       <div className={s.leadershipTipsContainer}>
-        <div>
+        <div className="mt-14">
           <Typography
             variant="futuraH3Bold"
             component="h2"
@@ -42,6 +42,26 @@ const LeadershipTipsSection: React.FC = () => {
           height={629}
           priority
           className="mt-10"
+        />
+      </div>
+      <div className="w-[100%] h-[100px] absolute bottom-0 z-[1]">
+        <Image
+          src="/images/ego.png"
+          alt="hero"
+          fill
+          priority
+          quality={100}
+          className="w-full object-cover"
+        />
+      </div>
+      <div className="w-[100%] h-[100px] absolute top-0 z-[1]">
+        <Image
+          src="/images/ego.png"
+          alt="hero"
+          fill
+          priority
+          quality={100}
+          className="w-full object-cover"
         />
       </div>
     </section>

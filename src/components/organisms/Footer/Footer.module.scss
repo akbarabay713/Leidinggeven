@@ -8,6 +8,7 @@
   justify-content: center;
   background-color: v.$base-white;
   overflow-x: clip;
+  flex-direction: column;
   &Container {
     max-width: 1440px;
     width: 1440px;
@@ -25,5 +26,22 @@
   }
   &Subtitle {
     color: v.$gray-500;
+  }
+
+  &Informatie {
+    color: v.$primary-500;
+    margin-bottom: f.rem(8);
+  }
+
+  &Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: v.$secondary-900;
+    padding: f.rem(10) f.rem(80);
+    @media (max-width: 768px) {
+      padding: f.rem(40) f.rem(16);
+    }
   }
 }

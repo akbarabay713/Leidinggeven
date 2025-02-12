@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 import { Input } from "../Input/Input";
 import { Button } from "../../atoms/Button/Button";
 import PaperPlane from "../../atoms/icons/PaperPlane/PaperPlane";
+import { Textarea } from "../Textarea/Textarea";
+import { Checkbox } from "../Checkbox/Checkbox";
 
 const FormContact: React.FC = () => {
   const t = useTranslations("contact");
@@ -12,37 +14,51 @@ const FormContact: React.FC = () => {
     <form action="">
       <div className={s.form}>
         <div className={s.formWrapper}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             <Input
               label="Email"
-              placeholder="Enter your email"
+              placeholder="typ hier"
               variant="default"
-              errorMessage="Invalid email address"
               isRequired={true}
+              size="md"
             />
             <Input
-              label="Email"
-              placeholder="Enter your email"
+              label="Bedrijfnaam"
+              placeholder="typ hier"
               variant="default"
-              errorMessage="Invalid email address"
+              size="md"
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-4">
             <Input
-              label="Email"
-              placeholder="Enter your email"
+              label="Email-adres"
+              placeholder="typ hier"
               variant="default"
-              errorMessage="Invalid email address"
+              isRequired={true}
+              size="md"
+            />
+            <Input
+              label="Telefoonnummer"
+              placeholder="typ hier"
+              variant="default"
+              size="md"
               isRequired={true}
             />
-            <Input
-              label="Email"
-              placeholder="Enter your email"
-              variant="default"
-              errorMessage="Invalid email address"
-            />
           </div>
+          <Textarea
+            label="Bericht"
+            placeholder="typ hier"
+            variant="default"
+            isRequired={true}
+            className="mb-4"
+          />
+          <Checkbox
+            label="Ja, ik ga er mee akkoord om af en toe emails te ontvangen met gratis tips en leuke updates."
+            variant="default"
+            className="text-[#667085] flex items-center gap-4"
+            id="checkbox"
+          />
         </div>
         <div className={s.formFooter}>
           <Button

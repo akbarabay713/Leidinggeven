@@ -29,7 +29,9 @@ const HeroTemplate: React.FC = () => {
             component="h2"
             className={s.heroSubtitle}
           >
-            {t("subtitle")}
+            {t.rich("subtitle", {
+              br: () => <br />,
+            })}
           </Typography>
 
           <div className={s.heroButtons}>
@@ -42,16 +44,26 @@ const HeroTemplate: React.FC = () => {
           </div>
         </div>
 
-        <div className={cn(s.heroImg, "border border-blue-500")}>
+        <div className={cn(s.heroImg)}>
           <Image
             src="/images/hero.png"
             alt="hero"
-            width={800}
-            height={800}
+            width={1000}
+            height={1000}
             priority
-            quality={90}
+            quality={100}
           />
         </div>
+      </div>
+      <div className="w-[2116px] h-[329px] absolute -bottom-40 z-[1]">
+        <Image
+          src="/images/leiding.png"
+          alt="hero"
+          fill
+          priority
+          quality={100}
+          className="w-full"
+        />
       </div>
     </section>
   );

@@ -71,7 +71,7 @@ const AuthorSection: React.FC = () => {
             </Button>
           </div>
         </div>
-        <Divider className="border-[#F2F4F7] opacity-100 my-8" />
+        <Divider className="border-[#b2b4b6] opacity-100 my-8" />
       </div>
     </section>
   );

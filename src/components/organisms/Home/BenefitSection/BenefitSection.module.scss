@@ -8,6 +8,7 @@
   justify-content: center;
   background-color: v.$primary-900;
   overflow-x: clip;
+  position: relative;
   &Container {
     max-width: 1440px;
     width: 1440px;
@@ -25,6 +26,9 @@
 
   &Title {
     color: v.$base-white;
+    position: sticky;
+    top: 150px;
+    height: fit-content;
 
     @media (max-width: 768px) {
       font-size: 28px;
