@@ -78,3 +78,68 @@ body {
 .slick-disabled {
   opacity: 0.5;
 }
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -30px;
+  left: 20px;
+  text-align: left;
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: var(--secondary-50);
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--secondary-600);
+}
+
+.slick-disabled {
+  opacity: 0.5;
+}
+
+.slick-next,
+.slick-prev {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  opacity: 1;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  content: "";
+  font-size: 24px;
+  color: white;
+  background-color: blue;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.slick-next::before {
+  background-image: url(/vercel.svg);
+}
+
+.slick-prev::before {
+  background-image: url(/vercel.svg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .slick-next,
+  .slick-prev {
+    right: 10px;
+  }
+}

@@ -5,26 +5,12 @@ import { useTranslations } from "next-intl";
 import s from "./TestimonialSection.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
 import cn from "classnames";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import CardTesimonial from "@/src/components/molecules/CardTestimonial/CardTestimonial";
 import CardAuthor from "@/src/components/molecules/CardAuthor/CardAuthor";
+import TestimonialSlider from "./../../../molecules/TestimoniSlider/TestimoniSlider";
 
 const TestimonialSection: React.FC = () => {
   const t = useTranslations("testimonial");
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
-    arrows: true,
-    variableWidth: true,
-    centerMode: false,
-  };
+
   return (
     <section className={s.testimonial}>
       <div className={cn(s.testimonialContainer)}>
@@ -34,9 +20,7 @@ const TestimonialSection: React.FC = () => {
             component="h2"
             className={s.testimonialTitle}
           >
-            {t.rich("title", {
-              br: () => <br />,
-            })}
+            {t.rich("title", { br: () => <br /> })}
           </Typography>
           <div className="flex gap-1 flex-col">
             <Typography
@@ -46,22 +30,17 @@ const TestimonialSection: React.FC = () => {
             >
               {t("subtitle")}
             </Typography>
-            <Button variant={"primary"} size={"xl"}>
+            <Button variant="primary" size="xl">
               {t("TERUGBELVERZOEK?")}
             </Button>
           </div>
         </div>
-        <div>
-          <div className="flex gap-10 w-full flex-wrap md:flex-nowrap">
-            <div>
-              <CardAuthor />
-            </div>
-            <Slider {...settings} className="w-full">
-              <CardTesimonial />
-              <CardTesimonial />
-              <CardTesimonial />
-            </Slider>
+
+        <div className="flex gap-10 w-full flex-wrap lg:flex-nowrap justify-center items-center">
+          <div className="w-full lg:w-[20%] flex justify-center">
+            <CardAuthor />
           </div>
+          <TestimonialSlider />
         </div>
       </div>
     </section>

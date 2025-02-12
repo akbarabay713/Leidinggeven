@@ -11,7 +11,7 @@
   height: 535px;
   position: sticky;
   top: 100px;
-  z-index: -1;
+  z-index: 1;
 
   @media (max-width: 768px) {
     height: auto;
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    // z-index: 1000;
 
     @media (max-width: 768px) {
       padding: f.rem(40) f.rem(16) f.rem(120) f.rem(16);

@@ -8,7 +8,8 @@
   justify-content: center;
   background-color: v.$base-white;
   overflow: clip;
-
+  z-index: 20;
+  position: relative;
   &Container {
     max-width: 1440px;
     width: 1440px;

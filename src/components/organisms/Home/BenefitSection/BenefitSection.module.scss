@@ -11,7 +11,7 @@
   position: relative;
   &Container {
     max-width: 1440px;
-    width: 1440px;
+    // width: 1440px;
     padding: f.rem(140) f.rem(80) f.rem(120) f.rem(80);
     position: relative;
     display: grid;
@@ -32,6 +32,7 @@
 
     @media (max-width: 768px) {
       font-size: 28px;
+      position: static;
     }
   }
   &Subtitle {

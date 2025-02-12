@@ -3,17 +3,12 @@
 @use "styles/abstracts/mixins" as m;
 
 .card {
-  // width: f.rem(200);
   max-width: f.rem(800);
   padding-right: f.rem(48);
   border-right: 1px solid v.$secondary-100;
   margin-right: 32px;
   z-index: 1;
 
-  @media (max-width: 768px) {
-    width: 100px;
-    max-width: 100px;
-  }
   .name {
     color: v.$secondary-500;
     font-family: Futura-Medium;

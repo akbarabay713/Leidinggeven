@@ -7,11 +7,11 @@
   align-items: center;
   justify-content: center;
   background-color: v.$base-white;
-  overflow-x: clip;
+  // overflow-x: clip;
   flex-direction: column;
   &Container {
     max-width: 1440px;
-    width: 1440px;
+    width: 100%;
     padding: f.rem(45) f.rem(80) f.rem(47) f.rem(80);
     position: relative;
 
@@ -41,7 +41,7 @@
     background: v.$secondary-900;
     padding: f.rem(10) f.rem(80);
     @media (max-width: 768px) {
-      padding: f.rem(40) f.rem(16);
+      padding: f.rem(10) f.rem(16);
     }
   }
 }

@@ -13,8 +13,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footerContainer}>
-        <div className="grid grid-cols-1 md:grid-cols-[auto_auto_auto] gap-8">
-          {/* <div className="flex gap-8 items-center justify-between md:flex-nowrap flex-wrap"> */}
+        <div className="grid grid-cols-1 md:grid-cols-[auto_auto_auto] gap-8 place-items-start md:place-items-center">
           <Image
             src="/images/logo-green.png"
             alt="hero"
@@ -74,7 +73,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="absolute right-4 md:static mt-4 md:mt-0">
             <Button
               size="xlIcon"
               variant="outlineGray"
@@ -84,7 +83,7 @@ const Footer: React.FC = () => {
               size="xlIcon"
               variant="outlineGray"
               icon={<Whatsapp color="white" />}
-              className="fixed bottom-[120px] z-50 bg-gradient-to-b from-[#61FD7D] to-[#2BB826] border-white"
+              className="mt-2 md:mt-0 static md:fixed md:bottom-[85px] bottom-[400px] z-50 bg-gradient-to-b from-[#61FD7D] to-[#2BB826] border-white"
             />
           </div>
         </div>
