@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import s from "./Footer.module.scss";
 import Image from "next/image";
@@ -7,9 +8,10 @@ import Whatsapp from "../../atoms/icons/Whatsapp/Whatsapp";
 import Typography from "../../atoms/Typography/Typography";
 import { useTranslations } from "next-intl";
 import Map from "../../atoms/icons/Map/Map";
+import { scrollToTop } from "@/src/lib/utils";
 
 const Footer: React.FC = () => {
-  const t = useTranslations("footer");
+  const t = useTranslations();
   return (
     <footer className={s.footer}>
       <div className={s.footerContainer}>
@@ -20,7 +22,7 @@ const Footer: React.FC = () => {
             width={312}
             height={224}
             priority
-            className="px-[52px]"
+            className="px-[3.25rem]"
           />
           <div>
             <Typography
@@ -31,42 +33,42 @@ const Footer: React.FC = () => {
               {t("Informatie")}
             </Typography>
             <div className="grid grid-cols-1 md:grid-cols-[auto_auto_auto] gap-3">
-              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[10px] bg-#F4FCF0] border w-fit">
+              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
                 <Map color="#8AD360" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
-                  className="text-[#09182E]"
+                  className="text-secondary-900"
                 >
                   CHOPINLAAN 10, WAALRE, 5583XV
                 </Typography>
               </div>
-              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[10px] bg-#F4FCF0] border w-fit">
+              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
                 <Map color="#8AD360" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
-                  className="text-[#09182E]"
+                  className="text-secondary-900"
                 >
                   STEFANIE VAN BOEKEL
                 </Typography>
               </div>
-              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[10px] bg-#F4FCF0] border w-fit">
+              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
                 <Map color="#8AD360" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
-                  className="text-[#09182E]"
+                  className="text-secondary-900"
                 >
                   +31(0) 6 5246 8481
                 </Typography>
               </div>
-              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[10px] bg-#F4FCF0] border w-fit">
+              <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
                 <Map color="#8AD360" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
-                  className="text-[#09182E]"
+                  className="text-secondary-900"
                 >
                   STEAFBUE@COACHING.COM
                 </Typography>
@@ -78,12 +80,13 @@ const Footer: React.FC = () => {
               size="xlIcon"
               variant="outlineGray"
               icon={<ChevronUp color="transparent" />}
+              onClick={scrollToTop}
             />
             <Button
               size="xlIcon"
               variant="outlineGray"
               icon={<Whatsapp color="white" />}
-              className="mt-2 md:mt-0 static md:fixed md:bottom-[85px] bottom-[400px] z-50 bg-gradient-to-b from-[#61FD7D] to-[#2BB826] border-white"
+              className="mt-2 md:mt-0 static md:fixed md:bottom-[85px] bottom-[400px] z-50 bg-gradient-to-b from-[#61FD7D] to-[#2BB826] border-none"
             />
           </div>
         </div>
@@ -94,7 +97,7 @@ const Footer: React.FC = () => {
           component="h3"
           className="text-white"
         >
-          {t("title")}
+          {t("footer title")}
         </Typography>
       </div>
     </footer>

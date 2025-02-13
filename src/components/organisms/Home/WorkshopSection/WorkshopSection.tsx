@@ -6,7 +6,7 @@ import { WORKSHOP } from "@/src/constants/Workshops";
 import CardWorkshop from "@/src/components/molecules/CardWorkshop/CardWorkshop";
 import Divider from "@/src/components/atoms/Divider/Divider";
 const WorkshopSection: React.FC = () => {
-  const t = useTranslations("workshop");
+  const t = useTranslations();
 
   return (
     <section className={s.workshop}>
@@ -16,7 +16,7 @@ const WorkshopSection: React.FC = () => {
           component="h2"
           className={s.workshopTitle}
         >
-          {t.rich("title", {
+          {t.rich("workshop title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -27,14 +27,14 @@ const WorkshopSection: React.FC = () => {
           component="h3"
           className={s.workshopSubtitle}
         >
-          {t("subtitle")}
+          {t("workshop subtitle")}
         </Typography>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-[60px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-[3.75rem]">
           {WORKSHOP.map((i, index) => (
             <CardWorkshop
               key={index}
-              title={i.title}
+              title={t(i.title)}
               detail={i.detail}
               style={i.style}
               part={i.part}

@@ -7,7 +7,7 @@ import Call from "@/src/components/atoms/icons/Call/Call";
 import Image from "next/image";
 
 const TrainingTemplate: React.FC = () => {
-  const t = useTranslations("training");
+  const t = useTranslations();
 
   return (
     <section className={s.training}>
@@ -17,7 +17,7 @@ const TrainingTemplate: React.FC = () => {
           component="h2"
           className={s.trainingTitle}
         >
-          {t.rich("title", {
+          {t.rich("training title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -28,7 +28,7 @@ const TrainingTemplate: React.FC = () => {
           component="h3"
           className={s.trainingSubtitle}
         >
-          {t("subtitle")}
+          {t("training subtitle")}
         </Typography>
 
         <Button
@@ -44,9 +44,11 @@ const TrainingTemplate: React.FC = () => {
         <Image
           src="/images/leiding.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
+          width={2116}
+          height={329}
           className="w-full"
         />
       </div>

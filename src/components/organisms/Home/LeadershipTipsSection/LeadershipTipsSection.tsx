@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/src/components/atoms/Button/Button";
 
 const LeadershipTipsSection: React.FC = () => {
-  const t = useTranslations("leadershipTips");
+  const t = useTranslations();
 
   return (
     <section className={s.leadershipTips}>
@@ -17,7 +17,7 @@ const LeadershipTipsSection: React.FC = () => {
             component="h2"
             className={s.leadershipTipsTitle}
           >
-            {t.rich("title", {
+            {t.rich("leadershipTips title", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}
@@ -28,9 +28,9 @@ const LeadershipTipsSection: React.FC = () => {
             component="h3"
             className={s.leadershipTipsSubtitle}
           >
-            {t("subtitle")}
+            {t("leadershipTips subtitle")}
           </Typography>
-          <Button variant={"outlineColor"} size={"xl"}>
+          <Button variant={"primaryOutline"} size={"xl"}>
             {t("AANMELDEN")}
           </Button>
         </div>
@@ -41,27 +41,31 @@ const LeadershipTipsSection: React.FC = () => {
           width={691}
           height={629}
           priority
-          className="mt-10"
+          className="md:mt-10 -mt-20"
         />
       </div>
       <div className="w-[100%] h-[100px] absolute bottom-0 z-[1]">
         <Image
           src="/images/ego.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
-          className="w-full object-cover"
+          width={800}
+          height={800}
+          className="w-full "
         />
       </div>
       <div className="w-[100%] h-[100px] absolute top-0 z-[1]">
         <Image
           src="/images/ego.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
-          className="w-full object-cover"
+          width={800}
+          height={800}
+          className="w-full "
         />
       </div>
     </section>

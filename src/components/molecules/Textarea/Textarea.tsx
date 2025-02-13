@@ -26,7 +26,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     ref
   ) => {
     return (
-      <div className="flex flex-col gap-[6px] w-full">
+      <div className="flex flex-col gap-[0.375rem] w-full">
         {label && (
           <Label htmlFor={id} isRequired={isRequired}>
             {label}

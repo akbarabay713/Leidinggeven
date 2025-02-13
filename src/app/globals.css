@@ -34,18 +34,15 @@ body {
   opacity: 1;
 }
 
-/* Optional: Add additional styles for slick-arrow if necessary */
 .slick-prev,
 .slick-next {
   z-index: 10;
 }
 
-/* Optional: If you're using centerMode, you can adjust centered slides */
 .slick-center .slick-slide {
   opacity: 1;
 }
 
-/* You can also add styles to target the dots if needed */
 .slick-dots {
   bottom: -30px;
 }
@@ -60,23 +57,22 @@ body {
 }
 
 .slick-dots {
-  bottom: -30px;
-  left: 20px;
-  text-align: left;
+  bottom: -50px !important;
+  left: -8px !important;
+  text-align: left !important;
 }
 
 .slick-dots li button:before {
-  font-size: 16px;
-  color: blue;
+  font-size: 16px !important;
   opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-  color: red;
+  color: #133563 !important;
 }
 
 .slick-disabled {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 .slick-current {
@@ -99,47 +95,66 @@ body {
   color: var(--secondary-600);
 }
 
-.slick-disabled {
-  opacity: 0.5;
-}
-
 .slick-next,
 .slick-prev {
   width: 50px;
   height: 50px;
   z-index: 10;
-  opacity: 1;
+  opacity: 1 !important;
+}
+.slick-prev {
+  margin-left: -25px !important;
 }
 
 .slick-next::before,
 .slick-prev::before {
-  content: "";
+  /* content: "" !important; */
   font-size: 24px;
   color: white;
-  background-color: blue;
+  background-color: #133563;
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1;
+  opacity: 1 !important;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 8px;
+  border-radius: 8px !important;
+  padding-top: 5px;
+  border: 1px solid;
 }
-
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25 !important;
+}
 .slick-next::before {
-  background-image: url(/vercel.svg);
+  background-image: url(/images/ChevronRight.svg) !important;
 }
 
 .slick-prev::before {
-  background-image: url(/vercel.svg);
+  background-image: url(/images/left.svg) !important;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .slick-next,
   .slick-prev {
     right: 10px;
   }
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  background: #e8ebf0 !important;
+  display: block;
+  border-radius: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px !important;
+  height: 16px !important;
+  background: #8ad360 !important;
+  display: block;
+  border-radius: 100%;
 }

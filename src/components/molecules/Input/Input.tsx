@@ -15,7 +15,7 @@ interface InputProps
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ label, errorMessage, id, isRequired, ...props }, ref) => {
     return (
-      <div className="flex flex-col gap-[6px] w-full">
+      <div className="flex flex-col gap-[0.375rem] w-full">
         {label && (
           <Label htmlFor={id} isRequired={isRequired}>
             {label}

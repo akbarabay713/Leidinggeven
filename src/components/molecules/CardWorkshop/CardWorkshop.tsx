@@ -2,6 +2,7 @@ import React from "react";
 import s from "./CardWorkshop.module.scss";
 import Typography from "../../atoms/Typography/Typography";
 import cn from "classnames";
+import { useTranslations } from "next-intl";
 
 interface IStyles {
   bgColor: string;
@@ -16,6 +17,7 @@ interface IProps {
 }
 
 const CardWorkshop: React.FC<IProps> = ({ title, detail, part, style }) => {
+  const t = useTranslations();
   return (
     <div
       className={cn(s.wrapper)}
@@ -39,7 +41,7 @@ const CardWorkshop: React.FC<IProps> = ({ title, detail, part, style }) => {
         {detail?.map((item, index) => (
           <li key={index}>
             <Typography variant="interTextSmRegular" component="h5">
-              {item}
+              {t(item)}
             </Typography>
           </li>
         ))}

@@ -6,7 +6,7 @@ import CardWhoAreWe from "@/src/components/molecules/CardWhoAreWe/CardWhoAreWe";
 import { WHOAREWE } from "@/src/constants/WhoAreWe";
 
 const WhoAreWeSection: React.FC = () => {
-  const t = useTranslations("whoAreWe");
+  const t = useTranslations();
 
   return (
     <section className={s.whoAreWe}>
@@ -17,7 +17,7 @@ const WhoAreWeSection: React.FC = () => {
             component="h2"
             className={s.whoAreWeTitle}
           >
-            {t.rich("title", {
+            {t.rich("whoAreWe title", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}
@@ -28,7 +28,7 @@ const WhoAreWeSection: React.FC = () => {
             component="h3"
             className={s.whoAreWeSubtitle}
           >
-            {t("subtitle")}
+            {t("whoAreWe subtitle")}
           </Typography>
         </div>
 

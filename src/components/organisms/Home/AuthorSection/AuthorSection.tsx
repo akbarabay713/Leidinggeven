@@ -10,7 +10,7 @@ import Linkedin from "@/src/components/atoms/icons/Linkedin/Linkedin";
 import Divider from "@/src/components/atoms/Divider/Divider";
 
 const AuthorSection: React.FC = () => {
-  const t = useTranslations("author");
+  const t = useTranslations();
 
   return (
     <section className={s.author}>
@@ -20,7 +20,7 @@ const AuthorSection: React.FC = () => {
           component="h2"
           className={s.authorTitle}
         >
-          {t.rich("title", {
+          {t.rich("author title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -28,13 +28,18 @@ const AuthorSection: React.FC = () => {
 
         <div className="flex gap-[77px] items-end justify-center mb-16 flex-wrap md:flex-nowrap">
           <div className="w-[269px] min-w-[269px] flex-shrink-0">
-            <Image
-              src="/images/author2.png"
-              alt="hero"
-              width={269}
-              height={316}
-              priority
-            />
+            <div className="w-[269px] h-[316px]  relative">
+              <Image
+                src="/images/author2.png"
+                alt="hero"
+                priority
+                // fill
+                width={269}
+                height={316}
+                sizes="(max-width: 768px) 100%"
+                className="object-contain w-full h-full"
+              />
+            </div>
             <div className="relative flex flex-col gap-3 items-center justify-center -mt-28">
               <Button variant={"primary"} size={"md"} icon={<Linkedin />}>
                 <Typography
@@ -62,7 +67,7 @@ const AuthorSection: React.FC = () => {
               component="h3"
               className={s.authorSubtitle}
             >
-              {t.rich("subtitle", {
+              {t.rich("author subtitle", {
                 br: () => <br />,
               })}
             </Typography>

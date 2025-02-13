@@ -13,7 +13,7 @@ import Image from "next/image";
 // }
 
 const ChallengesSection: React.FC = () => {
-  const t = useTranslations("challenge");
+  const t = useTranslations();
 
   return (
     <section className={s.challenges}>
@@ -73,13 +73,15 @@ const ChallengesSection: React.FC = () => {
           {t("INSCHRIJVEN")}
         </Button>
       </div>
-      <div className="w-[2116px] h-[329px] absolute -bottom-40 z-[1]">
+      <div className="w-[100%] h-[329px] absolute -bottom-40 z-[1]">
         <Image
           src="/images/leiding.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
+          width={2116}
+          height={329}
           className="w-full"
         />
       </div>

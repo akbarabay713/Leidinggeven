@@ -9,7 +9,7 @@ import CardAuthor from "@/src/components/molecules/CardAuthor/CardAuthor";
 import TestimonialSlider from "./../../../molecules/TestimoniSlider/TestimoniSlider";
 
 const TestimonialSection: React.FC = () => {
-  const t = useTranslations("testimonial");
+  const t = useTranslations();
 
   return (
     <section className={s.testimonial}>
@@ -20,7 +20,7 @@ const TestimonialSection: React.FC = () => {
             component="h2"
             className={s.testimonialTitle}
           >
-            {t.rich("title", { br: () => <br /> })}
+            {t.rich("testimonial title", { br: () => <br /> })}
           </Typography>
           <div className="flex gap-1 flex-col">
             <Typography
@@ -28,7 +28,7 @@ const TestimonialSection: React.FC = () => {
               component="p"
               className={s.testimonialSubtitle}
             >
-              {t("subtitle")}
+              {t("testimonial subtitle")}
             </Typography>
             <Button variant="primary" size="xl">
               {t("TERUGBELVERZOEK?")}
@@ -37,7 +37,7 @@ const TestimonialSection: React.FC = () => {
         </div>
 
         <div className="flex gap-10 w-full flex-wrap lg:flex-nowrap justify-center items-center">
-          <div className="w-full lg:w-[20%] flex justify-center">
+          <div className="w-full lg:w-fit shrink-0 flex justify-center">
             <CardAuthor />
           </div>
           <TestimonialSlider />

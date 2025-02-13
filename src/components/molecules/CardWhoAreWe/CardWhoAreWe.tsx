@@ -14,7 +14,7 @@ interface IProps {
 const CardWhoAreWe: React.FC<IProps> = ({ text, styles }) => {
   return (
     <div
-      className="bg-green-200 rounded-lg p-4 min-h-[172px] flex items-end"
+      className="bg-green-200 rounded-lg p-4 min-h-[10.75rem] flex items-end"
       style={{ backgroundColor: styles[0].bgColor }}
     >
       <Typography

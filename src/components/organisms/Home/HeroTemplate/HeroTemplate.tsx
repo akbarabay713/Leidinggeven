@@ -1,5 +1,6 @@
+"use client";
 import Typography from "@/src/components/atoms/Typography/Typography";
-import React from "react";
+import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import s from "./HeroTemplate.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
@@ -7,19 +8,30 @@ import Image from "next/image";
 import cn from "classnames";
 import Call from "@/src/components/atoms/icons/Call/Call";
 import Calender from "@/src/components/atoms/icons/Calender/Calender";
+import Modal from "@/src/components/atoms/Modal/Modal";
 
 const HeroTemplate: React.FC = () => {
-  const t = useTranslations("hero");
+  const t = useTranslations();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className={s.hero}>
       <div className={cn(s.heroContainer)}>
+        <Modal
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+          size="sm"
+          variant="dark"
+        >
+          <h2 className="text-xl font-semibold">Modal Content</h2>
+          <p>This is a customizable modal using CVA.</p>
+        </Modal>
         <div className="z-20 relative">
           <Typography
             variant="futuraH1Bold"
             component="h1"
             className={s.heroTitle}
           >
-            {t.rich("title", {
+            {t.rich("hero title", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}
@@ -29,7 +41,7 @@ const HeroTemplate: React.FC = () => {
             component="h2"
             className={s.heroSubtitle}
           >
-            {t.rich("subtitle", {
+            {t.rich("hero subtitle", {
               br: () => <br />,
             })}
           </Typography>
@@ -38,7 +50,12 @@ const HeroTemplate: React.FC = () => {
             <Button variant={"primaryOutline"} size={"xl"} icon={<Calender />}>
               {t("KENNISMAKING PLANNEN")}
             </Button>
-            <Button variant={"outlineColor"} size={"xl"} icon={<Call />}>
+            <Button
+              variant={"outlineColor"}
+              size={"xl"}
+              icon={<Call />}
+              onClick={() => setIsOpen(true)}
+            >
               CONTACT
             </Button>
           </div>
@@ -59,9 +76,11 @@ const HeroTemplate: React.FC = () => {
         <Image
           src="/images/leiding.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
+          width={2116}
+          height={329}
           className="w-full"
         />
       </div>

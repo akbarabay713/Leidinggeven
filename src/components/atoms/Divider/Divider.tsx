@@ -8,7 +8,10 @@ interface DividerProps {
 const Divider: React.FC<DividerProps> = ({ className }) => {
   return (
     <hr
-      className={cn("border-t-[3px] border-white opacity-[0.12]", className)}
+      className={cn(
+        "border-t-[0.188rem] border-white opacity-[0.12]",
+        className
+      )}
     />
   );
 };

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/src/components/atoms/Button/Button";
 
 const AreYouReadySection: React.FC = () => {
-  const t = useTranslations("areYouReady");
+  const t = useTranslations();
 
   return (
     <section className={s.areYouReady}>
@@ -26,7 +26,7 @@ const AreYouReadySection: React.FC = () => {
               component="h2"
               className={s.areYouReadyTitle}
             >
-              {t.rich("title", {
+              {t.rich("areYouReady title", {
                 span: (chunks) => <span>{chunks}</span>,
                 br: () => <br />,
               })}
@@ -36,7 +36,7 @@ const AreYouReadySection: React.FC = () => {
               component="h3"
               className={s.areYouReadySubtitle}
             >
-              {t.rich("subtitle", {
+              {t.rich("areYouReady subtitle", {
                 span: (chunks) => <span>{chunks}</span>,
                 br: () => <br />,
               })}

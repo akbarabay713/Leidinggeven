@@ -6,7 +6,7 @@ import Image from "next/image";
 import Linkedin from "@/src/components/atoms/icons/Linkedin/Linkedin";
 
 const AboutSection: React.FC = () => {
-  const t = useTranslations("about");
+  const t = useTranslations();
 
   return (
     <section className={s.about}>
@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
             component="h2"
             className={s.aboutTitle}
           >
-            {t.rich("title", {
+            {t.rich("about title", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}
@@ -39,7 +39,7 @@ const AboutSection: React.FC = () => {
               <div className="flex items-center justify-between">
                 <Typography
                   variant="futuraH4Bold"
-                  component="h4"
+                  component="h3"
                   className={s.aboutNames}
                 >
                   PAUL VAN SCHAIK
@@ -70,7 +70,7 @@ const AboutSection: React.FC = () => {
           </div>
 
           <Typography variant="interTextLgRegular" component="h3">
-            {t.rich("subtitle", {
+            {t.rich("about subtitle", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}

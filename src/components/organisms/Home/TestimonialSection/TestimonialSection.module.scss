@@ -10,9 +10,7 @@
   overflow-x: clip;
   .testimonialContainer {
     max-width: 1440px;
-    border: 1px solid red;
-    // width: 1440px;
-    // width: 100%;
+
     padding: f.rem(120) f.rem(80) f.rem(120) f.rem(80);
     position: relative;
     display: flex;
@@ -23,10 +21,7 @@
       width: 100%;
       max-width: 1440px;
     }
-    // @media (max-width: 1024px) {
-    //   width: 100%;
-    //   max-width: 1024px;
-    // }
+
     @media (max-width: 768px) {
       padding: f.rem(40) f.rem(16) f.rem(40) f.rem(16);
       width: 100%;

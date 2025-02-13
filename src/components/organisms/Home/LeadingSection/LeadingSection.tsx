@@ -25,13 +25,13 @@ const LeadingSection: React.FC = () => {
               component="h2"
               className={s.leadingTitle}
             >
-              {t.rich("leading.title", {
+              {t.rich("leading title", {
                 span: (chunks) => <span>{chunks}</span>,
                 br: () => <br />,
               })}
               <br />
               <Typography variant="futuraH3Bold" component="span">
-                {t.rich("leading.span", {
+                {t.rich("leading span", {
                   span: (chunks) => <span>{chunks}</span>,
                   br: () => <br />,
                 })}
@@ -42,17 +42,17 @@ const LeadingSection: React.FC = () => {
               component="h3"
               className={s.leadingSubtitle}
             >
-              {t.rich("leading.subtitle", {
+              {t.rich("leading subtitle", {
                 span: (chunks) => <span>{chunks}</span>,
                 br: () => <br />,
               })}
             </Typography>
             <div className="flex gap-4 mt-8">
-              <Button variant={"primaryOutline"} size={"xl"}>
-                {t("leading.INSCHRIJVEN")}
+              <Button variant={"primary"} size={"xl"}>
+                {t("INSCHRIJVEN")}
               </Button>
-              <Button variant={"outlineColor"} size={"xl"}>
-                {t("leading.KENNISMAKEN")}
+              <Button variant={"primaryOutline"} size={"xl"}>
+                {t("KENNISMAKEN")}
               </Button>
             </div>
           </div>

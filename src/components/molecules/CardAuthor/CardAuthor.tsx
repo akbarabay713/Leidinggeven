@@ -1,10 +1,9 @@
-// import Typography from "@/src/components/atoms/Typography/Typography";
 import React from "react";
 import s from "./CardAuthor.module.scss";
-// import Typography from "@/src/components/atoms/Typography/Typography";
+
 import Image from "next/image";
-import Calender from "../../atoms/icons/Calender/Calender";
 import { Button } from "../../atoms/Button/Button";
+import Linkedin from "../../atoms/icons/Linkedin/Linkedin";
 
 const CardAuthor: React.FC = () => {
   return (
@@ -19,10 +18,10 @@ const CardAuthor: React.FC = () => {
         />
       </div>
       <div className="flex flex-col gap-2 p-2 items-center justify-center">
-        <Button variant={"primary"} size={"xl"} icon={<Calender />}>
+        <Button variant={"primary"} size={"xl"} icon={<Linkedin />}>
           STEFANIE VAN BOEKEL
         </Button>
-        <Button variant={"primary"} size={"xl"}>
+        <Button variant={"primary"} size={"xl"} icon={<Linkedin />}>
           STEFANIE VAN BOEKEL
         </Button>
       </div>

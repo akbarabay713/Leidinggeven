@@ -5,7 +5,7 @@ import s from "./ContactSection.module.scss";
 import FormContact from "@/src/components/molecules/FormContact/FormContact";
 
 const ContactSection: React.FC = () => {
-  const t = useTranslations("contact");
+  const t = useTranslations();
 
   return (
     <section className={s.contact}>
@@ -15,7 +15,7 @@ const ContactSection: React.FC = () => {
           component="h2"
           className={s.contactTitle}
         >
-          {t.rich("title", {
+          {t.rich("contact title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -25,7 +25,7 @@ const ContactSection: React.FC = () => {
           component="h3"
           className={s.contactSubtitle}
         >
-          {t.rich("subtitle", {
+          {t.rich("contact subtitle", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}

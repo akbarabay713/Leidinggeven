@@ -15,7 +15,7 @@ const OrganisationSection: React.FC = () => {
           component="h2"
           className={s.organisationTitle}
         >
-          {t.rich("organisation.title", {
+          {t.rich("organisation title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -27,7 +27,7 @@ const OrganisationSection: React.FC = () => {
             component="h3"
             className={s.organisationSubtitle}
           >
-            {t.rich("organisation.subtitle", {
+            {t.rich("organisation subtitle", {
               span: (chunks) => <span>{chunks}</span>,
               br: () => <br />,
             })}
@@ -45,9 +45,11 @@ const OrganisationSection: React.FC = () => {
         <Image
           src="/images/leiding.png"
           alt="hero"
-          fill
+          // fill
           priority
           quality={100}
+          width={2116}
+          height={329}
           className="w-full"
         />
       </div>

@@ -18,7 +18,7 @@ const BenefitSection: React.FC = () => {
           component="h2"
           className={s.benefitTitle}
         >
-          {t.rich("benefit.title", {
+          {t.rich("benefit title", {
             span: (chunks) => <span>{chunks}</span>,
             br: () => <br />,
           })}
@@ -27,7 +27,11 @@ const BenefitSection: React.FC = () => {
         <div>
           <div className="flex flex-col gap-6 pl-4 md:pl-0">
             {BENEFIT.map((b, i) => (
-              <CardBenefit title={b.title} subtitle={b.subtitle} key={i} />
+              <CardBenefit
+                title={t(b.title)}
+                subtitle={t(b.subtitle)}
+                key={i}
+              />
             ))}
           </div>
 
@@ -36,7 +40,7 @@ const BenefitSection: React.FC = () => {
             component="p"
             className={s.benefitSubtitle}
           >
-            {t("benefit.subtitle")}
+            {t("benefit subtitle")}
           </Typography>
           <Button
             size={"xl"}
