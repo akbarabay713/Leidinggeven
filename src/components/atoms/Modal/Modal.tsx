@@ -1,10 +1,11 @@
+"use client";
 import { cva } from "class-variance-authority";
 
 import { ReactNode } from "react";
 import Menu from "../icons/Menu/Menu";
 
 const modalVariants = cva(
-  "fixed inset-0 flex items-center justify-center bg-black bg-opacity-50",
+  "fixed flex items-center justify-center bg-black bg-opacity-50",
   {
     variants: {
       size: {
@@ -15,7 +16,7 @@ const modalVariants = cva(
       },
       variant: {
         default: "bg-white rounded-lg p-6 shadow-lg",
-        dark: "bg-gray-900 text-white rounded-lg p-6 shadow-lg",
+        dark: "bg-gray-900 text-white rounded-lg p-6 shadow-lg flex items-center justify-center",
       },
     },
     defaultVariants: {
@@ -44,7 +45,7 @@ export default function Modal({
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 border border-red-500"
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999] border border-red-500"
       onClick={onClose}
     >
       <div
