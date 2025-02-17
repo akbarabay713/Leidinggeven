@@ -23,19 +23,21 @@ const AboutSection: React.FC = () => {
             })}
           </Typography>
 
-          <Image
-            src="/images/book-small.png"
-            alt="hero"
-            width={269}
-            height={316}
-            priority
-          />
+          <div className=" aspect-auto shrink-0">
+            <Image
+              src="/images/book-small.png"
+              alt="hero"
+              width={269}
+              height={316}
+              priority
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p>{t("Geschreven door:")}</p>
-            <div className="flex gap-6 flex-col pr-12 border-r border-[#3A5A28]">
+            <div className="flex gap-6 flex-col pr-12 border-r border-primary-800">
               <div className="flex items-center justify-between">
                 <Typography
                   variant="futuraH4Bold"

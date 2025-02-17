@@ -12,10 +12,10 @@ const Label = ({ children, isRequired, className }: LabelProps) => {
     <Typography
       variant="interTextMdBaseRegular"
       component="label"
-      className={cn("text-[#1D2939]", className)}
+      className={cn("text-secondary-800", className)}
     >
       {children}
-      {isRequired && <span className="text-[#F04438]"> *</span>}
+      {isRequired && <span className="text-error-danger-500"> *</span>}
     </Typography>
   );
 };

@@ -35,6 +35,7 @@ const typographyVariants = cva("", {
       interTextMdBaseRegular: styles.interTextMdBaseRegular,
       interTextMdBaseMedium: styles.interTextMdBaseMedium,
       interTextSmRegular: styles.interTextSmRegular,
+      interTextSmSemibold: styles.interTextSmSemibold,
       interTextXsSemibold: styles.interTextXsSemibold,
     },
   },

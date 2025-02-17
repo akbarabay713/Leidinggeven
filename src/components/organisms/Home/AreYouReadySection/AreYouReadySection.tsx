@@ -12,13 +12,15 @@ const AreYouReadySection: React.FC = () => {
     <section className={s.areYouReady}>
       <div className={s.areYouReadyContainer}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-start justify-items-center">
-          <Image
-            src="/images/areyouready.png"
-            alt="hero"
-            width={609}
-            height={615}
-            priority
-          />
+          <div className="aspect-auto">
+            <Image
+              src="/images/areyouready.png"
+              alt="hero"
+              width={609}
+              height={615}
+              priority
+            />
+          </div>
 
           <div>
             <Typography
@@ -46,7 +48,7 @@ const AreYouReadySection: React.FC = () => {
               <Button variant={"primary"} size={"xl"}>
                 {t("TERUGBELVERZOEK")}
               </Button>
-              <Button variant={"outlineColor"} size={"xl"}>
+              <Button variant={"primaryOutline"} size={"xl"}>
                 {t("KENNISMAKING PLANNEN")}
               </Button>
             </div>

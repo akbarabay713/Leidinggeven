@@ -80,19 +80,9 @@ body {
 }
 
 .slick-dots {
-  bottom: -30px;
+  bottom: -30px !important;
   left: 20px;
   text-align: left;
-}
-
-.slick-dots li button:before {
-  font-size: 16px;
-  color: var(--secondary-50);
-  opacity: 1;
-}
-
-.slick-dots li.slick-active button:before {
-  color: var(--secondary-600);
 }
 
 .slick-next,
@@ -112,8 +102,8 @@ body {
   font-size: 24px;
   color: white;
   background-color: #133563;
-  width: 48px;
-  height: 48px;
+  width: 48px !important;
+  height: 48px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,8 +111,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px !important;
-  padding-top: 5px;
-  border: 1px solid;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -130,6 +118,8 @@ body {
 }
 .slick-next::before {
   background-image: url(/images/ChevronRight.svg) !important;
+  background-size: contain;
+  padding: 5px !important;
 }
 
 .slick-prev::before {

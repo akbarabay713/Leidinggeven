@@ -7,10 +7,12 @@ import { Button } from "@/src/components/atoms/Button/Button";
 import cn from "classnames";
 import CardAuthor from "@/src/components/molecules/CardAuthor/CardAuthor";
 import TestimonialSlider from "./../../../molecules/TestimoniSlider/TestimoniSlider";
+import { openModal } from "@/src/stores/slices/modalSlice";
+import { useAppDispatch } from "@/src/stores/hooks";
 
 const TestimonialSection: React.FC = () => {
   const t = useTranslations();
-
+  const dispatch = useAppDispatch();
   return (
     <section className={s.testimonial}>
       <div className={cn(s.testimonialContainer)}>
@@ -30,7 +32,11 @@ const TestimonialSection: React.FC = () => {
             >
               {t("testimonial subtitle")}
             </Typography>
-            <Button variant="primary" size="xl">
+            <Button
+              variant="primary"
+              size="xl"
+              onClick={() => dispatch(openModal("ModalContact"))}
+            >
               {t("TERUGBELVERZOEK?")}
             </Button>
           </div>

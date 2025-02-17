@@ -1,6 +1,6 @@
 "use client";
 import Typography from "@/src/components/atoms/Typography/Typography";
-import React, { useState } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
 import s from "./HeroTemplate.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
@@ -8,23 +8,20 @@ import Image from "next/image";
 import cn from "classnames";
 import Call from "@/src/components/atoms/icons/Call/Call";
 import Calender from "@/src/components/atoms/icons/Calender/Calender";
-import Modal from "@/src/components/atoms/Modal/Modal";
 
-const HeroTemplate: React.FC = () => {
+import { useAppDispatch, useAppSelector } from "@/src/stores/hooks";
+import { openModal } from "@/src/stores/slices/modalSlice";
+import { useUsers } from "@/src/hooks/useFetchUser";
+
+const ModalContact: React.FC = () => {
   const t = useTranslations();
-  const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useAppDispatch();
+  const { data } = useUsers();
+  const users = useAppSelector((state) => state.user.users);
+  // console.log(data, users);
   return (
     <section className={s.hero}>
       <div className={cn(s.heroContainer)}>
-        <Modal
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-          size="sm"
-          variant="dark"
-        >
-          <h2 className="text-xl font-semibold">Modal Content</h2>
-          <p>This is a customizable modal using CVA.</p>
-        </Modal>
         <div className="z-20 relative">
           <Typography
             variant="futuraH1Bold"
@@ -47,14 +44,19 @@ const HeroTemplate: React.FC = () => {
           </Typography>
 
           <div className={s.heroButtons}>
-            <Button variant={"primaryOutline"} size={"xl"} icon={<Calender />}>
+            <Button
+              variant={"primaryOutline"}
+              size={"xl"}
+              icon={<Calender />}
+              onClick={() => dispatch(openModal("ModalOntvang"))}
+            >
               {t("KENNISMAKING PLANNEN")}
             </Button>
             <Button
               variant={"outlineColor"}
               size={"xl"}
               icon={<Call />}
-              onClick={() => setIsOpen(true)}
+              onClick={() => dispatch(openModal("ModalContact"))}
             >
               CONTACT
             </Button>
@@ -88,4 +90,4 @@ const HeroTemplate: React.FC = () => {
   );
 };
 
-export default HeroTemplate;
+export default ModalContact;

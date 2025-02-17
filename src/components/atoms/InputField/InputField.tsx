@@ -25,15 +25,17 @@ const inputVariants = cva(s.input, {
 interface InputFieldProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size">,
     VariantProps<typeof inputVariants> {
-  size?: "sm" | "md" | "lg"; // Override size
+  size?: "sm" | "md" | "lg";
+  type?: React.HTMLInputTypeAttribute;
 }
 
 const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
-  ({ className, size = "md", variant, ...props }, ref) => {
+  ({ className, size = "md", variant, type = "text", ...props }, ref) => {
     return (
       <input
         ref={ref}
         className={cn(inputVariants({ size, variant }), className)}
+        type={type}
         {...props}
       />
     );

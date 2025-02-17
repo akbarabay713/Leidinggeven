@@ -94,6 +94,15 @@
   }
 }
 
+.linkPrimary {
+  color: v.$primary-500;
+  border: none !important;
+  padding: none !important;
+  &:hover {
+    color: v.$primary-700;
+  }
+}
+
 .primaryMedium {
   text-transform: uppercase;
 }

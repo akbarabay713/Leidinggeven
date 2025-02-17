@@ -1,14 +1,18 @@
+"use client";
 import Typography from "@/src/components/atoms/Typography/Typography";
 import React from "react";
 import { useTranslations } from "next-intl";
 import s from "./BenefitSection.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
-
 import CardBenefit from "@/src/components/molecules/CardBenefit/CardBenefit";
 import { BENEFIT } from "@/src/constants/benefit";
 import Calender from "@/src/components/atoms/icons/Calender/Calender";
+import { openModal } from "@/src/stores/slices/modalSlice";
+import { useAppDispatch } from "@/src/stores/hooks";
+
 const BenefitSection: React.FC = () => {
   const t = useTranslations();
+  const dispatch = useAppDispatch();
 
   return (
     <section className={s.benefit}>
@@ -47,6 +51,7 @@ const BenefitSection: React.FC = () => {
             variant={"primary"}
             icon={<Calender />}
             iconPosition="left"
+            onClick={() => dispatch(openModal("ModalOntvang"))}
           >
             {t("KENNISMAKING PLANNEN")}
           </Button>

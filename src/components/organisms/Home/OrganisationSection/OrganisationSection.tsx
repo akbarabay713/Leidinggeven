@@ -41,7 +41,7 @@ const OrganisationSection: React.FC = () => {
           />
         </div>
       </div>
-      <div className="w-[2116px] h-[329px] absolute bottom-0 z-[1]">
+      <div className="max-w-[2116px] max-h-[329px] absolute bottom-0 z-[1]">
         <Image
           src="/images/leiding.png"
           alt="hero"

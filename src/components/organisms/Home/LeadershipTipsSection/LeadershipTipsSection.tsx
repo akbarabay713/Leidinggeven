@@ -11,7 +11,7 @@ const LeadershipTipsSection: React.FC = () => {
   return (
     <section className={s.leadershipTips}>
       <div className={s.leadershipTipsContainer}>
-        <div className="mt-14">
+        <div className="mt-14 z-10 relative">
           <Typography
             variant="futuraH3Bold"
             component="h2"

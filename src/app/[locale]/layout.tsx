@@ -4,6 +4,9 @@ import { NextIntlClientProvider } from "next-intl";
 import MainLayout from "../../components/templates/MainLayout/MainLayout.component";
 import "../globals.css";
 import { getLocale } from "@/src/lib/i18n/config";
+import ReduxProvider from "@/src/components/templates/Provider/Provider";
+import { QueryProvider } from "@/src/components/templates/QueryProvider/QueryProvider";
+import { futuraFont } from "@/src/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,10 +25,14 @@ export default async function RootLayout({
   const locale = await getLocale();
   return (
     <html lang={locale}>
-      <body className={`antialiased relative`}>
-        <NextIntlClientProvider messages={messages}>
-          <MainLayout>{children}</MainLayout>
-        </NextIntlClientProvider>
+      <body className={`${futuraFont.variable} antialiased relative`}>
+        <ReduxProvider>
+          <QueryProvider>
+            <NextIntlClientProvider messages={messages}>
+              <MainLayout>{children}</MainLayout>
+            </NextIntlClientProvider>
+          </QueryProvider>
+        </ReduxProvider>
       </body>
     </html>
   );

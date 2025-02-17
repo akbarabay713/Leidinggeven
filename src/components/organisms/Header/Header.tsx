@@ -9,10 +9,12 @@ import Call from "../../atoms/icons/Call/Call";
 import LanguageSwitcher from "../../molecules/LanguageSwitcher/LanguageSwitcher";
 import Drawer from "../../molecules/Drawer/Drawer";
 import Menu from "../../atoms/icons/Menu/Menu";
+import { openModal } from "@/src/stores/slices/modalSlice";
+import { useAppDispatch } from "@/src/stores/hooks";
 const Header: React.FC = () => {
   const t = useTranslations();
   const [drawerOpen, setDrawerOpen] = useState(false);
-
+  const dispatch = useAppDispatch();
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
@@ -28,7 +30,7 @@ const Header: React.FC = () => {
           CONTACT
         </Button>
 
-        <div className="w-20 h-20 md:w-[136px] md:h-[100px] relative">
+        <div className="w-20 h-20 md:w-[136px] md:h-[100px] relative flex items-center justify-center">
           <Image
             src="/images/logo.png"
             alt="hero"
@@ -49,7 +51,12 @@ const Header: React.FC = () => {
         />
 
         <div className="hidden lg:flex gap-2 ">
-          <Button variant={"primaryOutline"} size={"xl"} icon={<Calender />}>
+          <Button
+            variant={"primaryOutline"}
+            size={"xl"}
+            icon={<Calender />}
+            onClick={() => dispatch(openModal("ModalOntvang"))}
+          >
             {t("KENNISMAKING PLANNEN")}
           </Button>
           <LanguageSwitcher />
@@ -57,7 +64,11 @@ const Header: React.FC = () => {
       </div>
 
       <Drawer isOpen={drawerOpen} onClose={toggleDrawer}>
-        <Button variant={"primaryOutline"} size={"xl"}>
+        <Button
+          variant={"primaryOutline"}
+          size={"xl"}
+          onClick={() => dispatch(openModal("ModalOntvang"))}
+        >
           {t("KENNISMAKING PLANNEN")}
         </Button>
         <LanguageSwitcher />

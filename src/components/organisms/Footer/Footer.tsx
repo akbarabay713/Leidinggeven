@@ -9,6 +9,9 @@ import Typography from "../../atoms/Typography/Typography";
 import { useTranslations } from "next-intl";
 import Map from "../../atoms/icons/Map/Map";
 import { scrollToTop } from "@/src/lib/utils";
+import Linkedin from "../../atoms/icons/Linkedin/Linkedin";
+import Call from "../../atoms/icons/Call/Call";
+import Sms from "../../atoms/icons/Sms/Sms";
 
 const Footer: React.FC = () => {
   const t = useTranslations();
@@ -22,7 +25,7 @@ const Footer: React.FC = () => {
             width={312}
             height={224}
             priority
-            className="px-[3.25rem]"
+            className="px-[3.25rem] shrink-0"
           />
           <div>
             <Typography
@@ -32,9 +35,9 @@ const Footer: React.FC = () => {
             >
               {t("Informatie")}
             </Typography>
-            <div className="grid grid-cols-1 md:grid-cols-[auto_auto_auto] gap-3">
+            <div className="flex flex-wrap lg:grid grid-cols-1 md:grid-cols-[auto_auto_auto] gap-3">
               <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
-                <Map color="#8AD360" />
+                <Map color="#8AD360" className="shrink-0" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
@@ -44,7 +47,7 @@ const Footer: React.FC = () => {
                 </Typography>
               </div>
               <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
-                <Map color="#8AD360" />
+                <Linkedin color="#8AD360" className="shrink-0" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
@@ -54,7 +57,7 @@ const Footer: React.FC = () => {
                 </Typography>
               </div>
               <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
-                <Map color="#8AD360" />
+                <Call color="#8AD360" className="shrink-0" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"
@@ -64,7 +67,7 @@ const Footer: React.FC = () => {
                 </Typography>
               </div>
               <div className="rounded-lg py-3 px-4 flex items-center justify-center gap-[0.625rem] bg-primary-25 border w-fit">
-                <Map color="#8AD360" />
+                <Sms color="#8AD360" className="shrink-0" />
                 <Typography
                   variant="interTextXsSemibold"
                   component="p"

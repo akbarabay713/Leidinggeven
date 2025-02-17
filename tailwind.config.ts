@@ -94,6 +94,9 @@ export default {
         "error-danger-800": "#912018",
         "error-danger-900": "#7a271a",
       },
+      fontFamily: {
+        satoshi: "var(--satoshi-font)",
+      },
     },
   },
 } satisfies Config;

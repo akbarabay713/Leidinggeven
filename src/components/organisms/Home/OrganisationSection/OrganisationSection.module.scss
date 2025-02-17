@@ -23,6 +23,10 @@
   &Title {
     color: v.$base-white;
     margin-bottom: f.rem(48);
+    word-break: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+
     @media (max-width: 768px) {
       font-size: 28px;
     }

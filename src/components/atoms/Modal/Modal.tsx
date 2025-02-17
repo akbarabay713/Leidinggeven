@@ -4,27 +4,24 @@ import { cva } from "class-variance-authority";
 import { ReactNode } from "react";
 import Menu from "../icons/Menu/Menu";
 
-const modalVariants = cva(
-  "fixed flex items-center justify-center bg-black bg-opacity-50",
-  {
-    variants: {
-      size: {
-        sm: "max-w-sm",
-        md: "max-w-md",
-        lg: "max-w-lg",
-        xl: "max-w-xl",
-      },
-      variant: {
-        default: "bg-white rounded-lg p-6 shadow-lg",
-        dark: "bg-gray-900 text-white rounded-lg p-6 shadow-lg flex items-center justify-center",
-      },
+const modalVariants = cva("fixed flex-col flex  overflow-hidden bg-black", {
+  variants: {
+    size: {
+      sm: "w-[20%]",
+      md: "lg:w-[40%] w-[95%]",
+      lg: "max-w-[660px] ",
+      xl: "w-[60%]",
     },
-    defaultVariants: {
-      size: "md",
-      variant: "default",
+    variant: {
+      default: "bg-white rounded-lg shadow-lg",
+      dark: "bg-white rounded-lg shadow-lg flex   opacity-100",
     },
-  }
-);
+  },
+  defaultVariants: {
+    size: "md",
+    variant: "default",
+  },
+});
 
 type ModalProps = {
   isOpen: boolean;
@@ -45,7 +42,7 @@ export default function Modal({
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999] border border-red-500"
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999]"
       onClick={onClose}
     >
       <div

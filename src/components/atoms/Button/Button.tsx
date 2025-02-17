@@ -10,6 +10,7 @@ const button = cva(styles.button, {
       primaryOutline: styles.primaryOutline,
       outlineColor: styles.outlineColor,
       outlineGray: styles.outlineGray,
+      linkPrimary: styles.linkPrimary,
     },
     size: {
       sm: styles.sm,
@@ -40,7 +41,12 @@ export interface ButtonProps
   iconPosition?: "left" | "right";
   disabled?: boolean;
   size: "sm" | "md" | "lg" | "xl" | "smIcon" | "mdIcon" | "lgIcon" | "xlIcon";
-  variant?: "primary" | "primaryOutline" | "outlineColor" | "outlineGray";
+  variant?:
+    | "primary"
+    | "primaryOutline"
+    | "outlineColor"
+    | "outlineGray"
+    | "linkPrimary";
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
