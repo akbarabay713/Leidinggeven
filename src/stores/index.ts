@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import modalReducer from "./slices/modalSlice";
 import userReducer from "./slices/userSlice";
+import snackbarReducer from "./slices/snackbarSlice";
 
 export const store = configureStore({
   reducer: {
     modal: modalReducer,
     user: userReducer,
+    snackbar: snackbarReducer,
   },
   devTools: process.env.NODE_ENV !== "production",
 });

@@ -73,7 +73,7 @@ const ChallengesSection: React.FC = () => {
           {t("INSCHRIJVEN")}
         </Button>
       </div>
-      <div className="w-[100%] h-[329px] absolute -bottom-40 z-[1]">
+      <div className="w-[2116px] h-[329px] absolute -bottom-40 z-[1]">
         <Image
           src="/images/leiding.png"
           alt="hero"
@@ -82,7 +82,7 @@ const ChallengesSection: React.FC = () => {
           quality={100}
           width={2116}
           height={329}
-          className="w-full"
+          className="w-full h-full"
         />
       </div>
     </section>

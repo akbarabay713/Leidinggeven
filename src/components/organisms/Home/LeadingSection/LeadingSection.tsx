@@ -38,7 +38,7 @@ const LeadingSection: React.FC = () => {
               </Typography>
             </Typography>
             <Typography
-              variant="interTextXxlMedium"
+              variant="interTextLgRegular"
               component="h3"
               className={s.leadingSubtitle}
             >

@@ -50,7 +50,7 @@ const OrganisationSection: React.FC = () => {
           quality={100}
           width={2116}
           height={329}
-          className="w-full"
+          className="w-full h-full"
         />
       </div>
     </section>

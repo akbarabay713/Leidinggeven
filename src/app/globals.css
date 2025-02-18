@@ -98,7 +98,7 @@ body {
 
 .slick-next::before,
 .slick-prev::before {
-  /* content: "" !important; */
+  content: "" !important;
   font-size: 24px;
   color: white;
   background-color: #133563;
@@ -111,6 +111,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px !important;
+  background-size: 24px;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -118,8 +119,6 @@ body {
 }
 .slick-next::before {
   background-image: url(/images/ChevronRight.svg) !important;
-  background-size: contain;
-  padding: 5px !important;
 }
 
 .slick-prev::before {
