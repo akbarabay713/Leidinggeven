@@ -26,6 +26,9 @@
     @include t.futura-h-3-light;
     span {
       color: v.$primary-500;
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
     }
 
     @media (max-width: 768px) {

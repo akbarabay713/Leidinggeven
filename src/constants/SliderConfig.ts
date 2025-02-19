@@ -2,7 +2,7 @@ const sliderSettings = {
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 1.2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 5000,

@@ -64,7 +64,11 @@ const Typography: React.FC<ITypographyProps> = ({
     component,
     {
       ...props,
-      className: cn(typographyVariants({ variant }), className),
+      className: cn(
+        typographyVariants({ variant }),
+        className,
+        "motion-translate-y-in-50 motion-blur-in-md"
+      ),
       style: { ...style },
     },
     children

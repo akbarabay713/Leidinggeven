@@ -9,6 +9,6 @@ export const pathnames: Pathnames<Locales> = {
 export const localesPrefix: LocalePrefix<Locales> = "always";
 
 export async function getLocale() {
-  const localeHeader = await headers(); // ✅ Menunggu headers() sebelum digunakan
+  const localeHeader = await headers();
   return localeHeader.get("X-NEXT-INTL-LOCALE") || "en";
 }

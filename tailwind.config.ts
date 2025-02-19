@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import tailwindcssMotion from "tailwindcss-motion";
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +9,7 @@ export default {
     "./src/_modules/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [
+    tailwindcssMotion,
     plugin(function ({ addComponents, theme }) {
       addComponents({
         ".fake-container-left": {

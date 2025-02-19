@@ -12,6 +12,7 @@ import Calender from "@/src/components/atoms/icons/Calender/Calender";
 import { useAppDispatch, useAppSelector } from "@/src/stores/hooks";
 import { openModal } from "@/src/stores/slices/modalSlice";
 import { useUsers } from "@/src/hooks/useFetchUser";
+import { scrollToContact } from "@/src/lib/utils";
 
 const ModalContact: React.FC = () => {
   const t = useTranslations();
@@ -56,7 +57,7 @@ const ModalContact: React.FC = () => {
               variant={"outlineColor"}
               size={"xl"}
               icon={<Call />}
-              onClick={() => dispatch(openModal("ModalContact"))}
+              onClick={() => scrollToContact()}
             >
               CONTACT
             </Button>

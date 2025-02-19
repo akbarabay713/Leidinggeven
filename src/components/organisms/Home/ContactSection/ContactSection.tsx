@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
   const t = useTranslations();
 
   return (
-    <section className={s.contact}>
+    <section className={s.contact} id="contact">
       <div className={s.contactContainer}>
         <Typography
           variant="futuraH3Bold"

@@ -26,6 +26,24 @@ const TestimonialSlider: React.FC = () => {
       company: "XYZ Company",
       desc: "testimoni3",
     },
+    {
+      name: "Tom",
+      position: "Projectleider",
+      company: "XYZ Company",
+      desc: "testimoni3",
+    },
+    {
+      name: "Tom",
+      position: "Projectleider",
+      company: "XYZ Company",
+      desc: "testimoni3",
+    },
+    {
+      name: "Tom",
+      position: "Projectleider",
+      company: "XYZ Company",
+      desc: "testimoni3",
+    },
   ];
 
   return (

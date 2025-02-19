@@ -8,7 +8,17 @@ import { useState } from "react";
 import { RadioGroup } from "../RadioGroup/RadioGroup";
 import { closeModal } from "@/src/stores/slices/modalSlice";
 import { useAppDispatch } from "@/src/stores/hooks";
-
+import { SubmitHandler, useForm } from "react-hook-form";
+import { showSnackbar } from "@/src/stores/slices/snackbarSlice";
+interface FormData {
+  email: string;
+  Telefoonnummer: string;
+}
+const contactOptions = [
+  { id: "telefoon", value: "telefoon", label: "TELEFOON" },
+  { id: "sms", value: "sms", label: "SMS" },
+  { id: "whatsapp", value: "whatsapp", label: "WHATSAPP" },
+];
 const ModalContact: React.FC = () => {
   const t = useTranslations();
   const dispatch = useAppDispatch();
@@ -18,13 +28,25 @@ const ModalContact: React.FC = () => {
     setSelectedMethod(value);
   };
 
-  const contactOptions = [
-    { id: "telefoon", value: "telefoon", label: "TELEFOON" },
-    { id: "sms", value: "sms", label: "SMS" },
-    { id: "whatsapp", value: "whatsapp", label: "WHATSAPP" },
-  ];
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
+
+  const onSubmit: SubmitHandler<FormData> = (data) => {
+    console.log("Form Data Submitted: ", data);
+    dispatch(closeModal("ModalContact"));
+    dispatch(
+      showSnackbar({
+        message: "Formulier succesvol verzonden!",
+        variant: "success",
+      })
+    );
+  };
+
   return (
-    <>
+    <form onSubmit={handleSubmit(onSubmit)} noValidate>
       <div className="p-4">
         <Typography
           variant="interTextSmSemibold"
@@ -59,6 +81,11 @@ const ModalContact: React.FC = () => {
           variant="default"
           isRequired={true}
           size="md"
+          {...register("email", {
+            required: `${t("Email-adres")} ${t("is vereist")}`,
+          })}
+          errorMessage={errors.email?.message}
+          type="email"
         />
         <Input
           label={t("Telefoonnummer")}
@@ -66,6 +93,11 @@ const ModalContact: React.FC = () => {
           variant="default"
           size="md"
           isRequired={true}
+          {...register("Telefoonnummer", {
+            required: `${t("Telefoonnummer")} ${t("is vereist")}`,
+          })}
+          errorMessage={errors.Telefoonnummer?.message}
+          type="number"
         />
       </div>
       <div className="px-6 py-4 bg-gray-25 flex items-center justify-end flex-wrap">
@@ -82,12 +114,11 @@ const ModalContact: React.FC = () => {
           size={"md"}
           icon={<PaperPlane />}
           iconPosition="right"
-          onClick={() => dispatch(closeModal("ModalContact"))}
         >
           {t("VERSTUREN")}
         </Button>
       </div>
-    </>
+    </form>
   );
 };
 

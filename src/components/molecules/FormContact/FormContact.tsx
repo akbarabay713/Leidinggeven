@@ -8,6 +8,8 @@ import PaperPlane from "../../atoms/icons/PaperPlane/PaperPlane";
 import { Textarea } from "../Textarea/Textarea";
 import { Checkbox } from "../Checkbox/Checkbox";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
+import { useAppDispatch } from "@/src/stores/hooks";
+import { showSnackbar } from "@/src/stores/slices/snackbarSlice";
 interface FormData {
   naam: string;
   email: string;
@@ -25,9 +27,15 @@ const FormContact: React.FC = () => {
     formState: { errors },
     control,
   } = useForm<FormData>();
-
+  const dispatch = useAppDispatch();
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log("Form Data Submitted: ", data);
+    dispatch(
+      showSnackbar({
+        message: "Formulier succesvol verzonden!",
+        variant: "success",
+      })
+    );
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate>

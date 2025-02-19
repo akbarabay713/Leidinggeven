@@ -1,27 +1,29 @@
-"use client";
 import { cva } from "class-variance-authority";
 
 import { ReactNode } from "react";
 import Menu from "../icons/Menu/Menu";
 
-const modalVariants = cva("fixed flex-col flex  overflow-hidden bg-black", {
-  variants: {
-    size: {
-      sm: "w-[20%]",
-      md: "lg:w-[40%] w-[95%]",
-      lg: "max-w-[660px] ",
-      xl: "w-[60%]",
+const modalVariants = cva(
+  "fixed flex-col flex  overflow-hidden bg-black ease-out motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md ",
+  {
+    variants: {
+      size: {
+        sm: "w-[20%]",
+        md: "lg:w-[40%] w-[95%]",
+        lg: "max-w-[660px] ",
+        xl: "w-[60%]",
+      },
+      variant: {
+        default: "bg-white rounded-lg shadow-lg",
+        dark: "bg-white rounded-lg shadow-lg flex opacity-100",
+      },
     },
-    variant: {
-      default: "bg-white rounded-lg shadow-lg",
-      dark: "bg-white rounded-lg shadow-lg flex   opacity-100",
+    defaultVariants: {
+      size: "md",
+      variant: "default",
     },
-  },
-  defaultVariants: {
-    size: "md",
-    variant: "default",
-  },
-});
+  }
+);
 
 type ModalProps = {
   isOpen: boolean;

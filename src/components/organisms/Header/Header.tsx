@@ -11,7 +11,7 @@ import Drawer from "../../molecules/Drawer/Drawer";
 import Menu from "../../atoms/icons/Menu/Menu";
 import { openModal } from "@/src/stores/slices/modalSlice";
 import { useAppDispatch } from "@/src/stores/hooks";
-import { showSnackbar } from "@/src/stores/slices/snackbarSlice";
+import { scrollToContact } from "@/src/lib/utils";
 const Header: React.FC = () => {
   const t = useTranslations();
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -27,14 +27,7 @@ const Header: React.FC = () => {
           size={"xl"}
           icon={<Call />}
           className="hidden md:flex"
-          onClick={() =>
-            dispatch(
-              showSnackbar({
-                message: "Formulier succesvol verzonden!",
-                variant: "success",
-              })
-            )
-          }
+          onClick={() => scrollToContact()}
         >
           CONTACT
         </Button>

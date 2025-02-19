@@ -1,3 +1,4 @@
+"use client";
 import Typography from "@/src/components/atoms/Typography/Typography";
 import React from "react";
 import { useTranslations } from "next-intl";
@@ -5,6 +6,7 @@ import s from "./TrainingTemplate.module.scss";
 import { Button } from "@/src/components/atoms/Button/Button";
 import Call from "@/src/components/atoms/icons/Call/Call";
 import Image from "next/image";
+import { scrollToContact } from "@/src/lib/utils";
 
 const TrainingTemplate: React.FC = () => {
   const t = useTranslations();
@@ -36,6 +38,7 @@ const TrainingTemplate: React.FC = () => {
           variant={"primary"}
           icon={<Call />}
           iconPosition="left"
+          onClick={() => scrollToContact()}
         >
           CONTACT
         </Button>
